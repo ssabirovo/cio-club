@@ -1,0 +1,115 @@
+.wrapper {
+  background-color: var(--secondary);
+  padding-top: 3rem;
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 640px) {
+      flex-direction: column;
+      gap: 3rem;
+    }
+  }
+  .left {
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    @media (max-width: 640px) {
+      width: 100%;
+      justify-content: center;
+      img {
+        display: none;
+      }
+    }
+    img {
+      width: 124px;
+      @media (max-width: 1050px) {
+        width: 94px;
+      }
+    }
+    .phone {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 23px;
+      line-height: 23px;
+      color: var(--primary);
+    }
+    .address {
+      color: #7a7ef0;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+
+    }
+    .links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+      @media (max-width: 1050px) {
+        gap: 1rem;
+        svg {
+          width: 25px;
+        }
+      }
+      a {
+        color: var(--primary);
+        cursor: pointer;
+      }
+    }
+  }
+  .right {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 640px) {
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 2rem;
+      img {
+        display: none;
+      }
+    }
+    .column {
+      gap: 1rem;
+      padding: 0 10px;
+      p {
+        width: max-content;
+        font-size: 28px;
+        @media (max-width: 1050px) {
+          font-size: 18px;
+        }
+      }
+      a,
+      div {
+        color: var(--link-text);
+        text-decoration: none;
+        cursor: pointer;
+        p {
+          font-size: 18px;
+          @media (max-width: 1050px) {
+            font-size: 12px;
+          }
+        }
+      }
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .copyright {
+    color: var(--link-text);
+    border-top: 2px solid var(--link-text);
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    @media (max-width: 460px) {
+      font-size: 10px;
+    }
+  }
+}

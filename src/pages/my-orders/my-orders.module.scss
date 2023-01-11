@@ -1,0 +1,27 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.order {
+  height: calc(100vh - 117px);
+  width: calc(100vw - 300px);
+
+  .title {
+    margin: 48px 0 37px 72px;
+    font-weight: 600;
+    font-size: 29px;
+    line-height: 35px;
+
+    color: var(--primary);
+  }
+}
+
+@media (max-width: 1023px) {
+  .wrapper {
+    display: block;
+  }
+  .order {
+    width: 100%;
+  }
+}

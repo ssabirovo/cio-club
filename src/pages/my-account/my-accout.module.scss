@@ -1,0 +1,113 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+
+  .account {
+    height: calc(100vh - 122px);
+    padding: 30px 50px 0;
+
+    .img-wrapper {
+      display: block;
+      margin: auto;
+      height: 131px;
+      width: 131px;
+      border: 1px solid var(--primary);
+      border-radius: 100%;
+
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+      }
+    }
+
+    .edit {
+      display: flex;
+      align-items: center;
+      gap: 2px;
+      position: absolute;
+      bottom: 5px;
+      right: 0px;
+      background: var(--secondary);
+      border-radius: 39px;
+      padding: 5px 8px;
+
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 10px;
+
+      text-align: center;
+
+      color: var(--primary);
+      cursor: pointer;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+
+      .submit-btn {
+        width: 200px;
+        padding: 12px 42px;
+        background: var(--primary);
+        border-radius: 5px;
+        font-size: 21px;
+        line-height: 21px;
+        text-align: center;
+        border: none;
+        color: var(--white);
+        @media (max-width: 460px) {
+          width: 100%;
+        }
+        &:hover {
+          animation-name: example;
+          animation-duration: 0.3s;
+          border: 1px solid var(--primary);
+          background-color: var(--secondary);
+          color: var(--primary);
+        }
+      }
+    }
+
+    .btn-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      font-size: 21px;
+      line-height: 25px;
+
+      color: var(--primary);
+    }
+
+    .input {
+      border: 1px solid var(--link-text);
+      border-radius: 15px;
+      font-weight: 300;
+      font-size: 23px;
+      line-height: 23px;
+      width: 95.5%;
+
+      color: var(--text);
+      padding: 18px 0 18px 18px;
+      &:disabled {
+        background: transparent;
+      }
+    }
+    .error {
+      margin-top: -20px;
+      color: var(--red);
+      i {
+        color: var(--red);
+      }
+    }
+  }
+  @media (max-width: 1023px) {
+    display: block;
+  }
+}

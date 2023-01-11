@@ -1,0 +1,96 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+
+  .submit-btn {
+    padding: 12px 42px;
+    background: var(--primary);
+    border-radius: 5px;
+    font-size: 21px;
+    line-height: 21px;
+    text-align: center;
+    border: none;
+    color: var(--white);
+    @media (max-width: 460px) {
+      width: 100%;
+    }
+    &:hover {
+      animation-name: example;
+      animation-duration: 0.3s;
+      border: 1px solid var(--primary);
+      background-color: var(--secondary);
+      color: var(--primary);
+    }
+    &:active {
+      background: var(--primary);
+    }
+  }
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--link-text);
+  border-radius: 15px;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 23px;
+  width: 100%;
+  overflow: hidden;
+
+  color: var(--link-text);
+  p {
+    padding: 0 10px 0 15px;
+  }
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--link-text);
+  border-radius: 15px;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 23px;
+  width: 100%;
+  overflow: hidden;
+
+  color: var(--link-text);
+  div {
+    padding: 0 10px 0 15px;
+    user-select: none;
+  }
+}
+
+.phone {
+  outline: none;
+  border: none !important;
+  border-left: 1px solid var(--link-text) !important;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 23px;
+  width: 95.5%;
+
+  color: var(--link-text);
+  padding: 18px 0 18px 5px;
+}
+
+.input {
+  border: 1px solid var(--link-text);
+  border-radius: 15px;
+  font-weight: 300;
+  font-size: 23px;
+  line-height: 23px;
+  width: 95.5%;
+
+  color: var(--link-text);
+  padding: 18px 0 18px 18px;
+}
+.error {
+  margin-top: -20px;
+  color: var(--red);
+  i {
+    color: var(--red);
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "direction": { "title": "Directions" },
+  "gallery": {
+    "title": "Our works",
+    "seeMoreBtn": "See More",
+    "closeBtn": "Close"
+  },
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "gallery": "Our works",
+    "contact": "Contact",
+    "btnApply": "Apply"
+  },
+  "aboutUs": {
+    "title": "About Us",
+    "subTitle": "IT-Outsourcing Company",
+    "description": "'TEDA' is a Tashkent-based company providing long-term business support to clients: IT consulting, branding technologies, design solutions, development and maintenance of Internet projects, Internet marketing, design and development of websites, as well as their support and development.",
+    "applyBtn": "Apply"
+  },
+  "aboutData": {
+    "telegramBot": {
+      "title": "Telegram Bot",
+      "subtitle": "What is a Telegram Bot ?",
+      "content": {
+        "p1": "The Telegram messenger stands out, compared to competing services such as WhatsApp and Co, especially because of its special function of bots and channels. Freely available application programming interfaces (APIs) make life easier if you want to collect data or automate things. Thus, a Telegram bot is a good way to deliver information from almost every conceivable area whenever you need it. In the following article, we would like to discuss exactly this special mode of operation and show how it can be used in practice.",
+        "p2": "A Telegram bot is a useful addition to smart communication, especially in professional areas. Compared to the most popular messaging services, Telegram offers additional advantages in the exchange of information with the special queries and actions of a bot listed in our article. However, like all programming, Telegram usually requires concrete programming knowledge for extensive use. Particularly for use in industry and machine connection, the OPC Router is a recommendable tool that extremely simplifies precisely this complex programming."
+      }
+    },
+    "threeDesign": {
+      "title": "3D Design",
+      "subtitle": "What is 3D design and what type of software is used to make 3D models?",
+      "content": {
+        "p1": "3D design is the process of using software to create a mathematical representation of a 3-dimensional object or shape. The created object is called a 3D model and these 3-dimensional models are used for computer-generated (CG) design. 3D design is used in a variety of industries to help artists shape, communicate, document, analyze, and share their ideas.",
+        "p2": "These are just a few of the types of 3D design methods used across the manufacturing, architecture, building, construction, media, and entertainment industries."
+      }
+    },
+    "crm": {
+      "title": "CRM",
+      "subtitle": "What is CRM?",
+      "content": {
+        "p1": "The development of CRM-systems is adapted to specific goals and specific business requirements. The duration of software development depends on the individual characteristics of the project. With our participation in the development of CRM, clear and transparent management, internal consistency, stable interaction and the formation of customer loyalty are achieved.",
+        "p2": "Why is CRM needed?",
+        "p3": "1. Systematization and management of sales if you do not have time to provide manual customer service. 2. Keeping a history of relations 'from to and' with each customer. 3. Monitoring the efficiency of managers and departments: how much work they do and how they interact with customers. 4. Collect data: at what stage does the company usually lose customers and how many potential customers did not become buyers. 5. Get a quick and complete analysis of customer service processes. 6. Increase sales volume by eliminating shortcomings in working with customers and optimizing processes."
+      }
+    },
+    "mobile": {
+      "title": "Mobile",
+      "subtitle": "What is mobile application ?",
+      "content": {
+        "p1": "A mobile application or app is a computer program or software application designed to run on a mobile device such as a phone, tablet, or watch. Mobile applications often stand in contrast to desktop applications which are designed to run on desktop computers, and web applications which run in mobile web browsers rather than directly on the mobile device.",
+        "p2": "Apps were originally intended for productivity assistance such as email, calendar, and contact databases, but the public demand for apps caused rapid expansion into other areas such as mobile games, factory automation, GPS and location-based services, order-tracking, and ticket purchases, so that there are now millions of apps available. Many apps require Internet access. Apps are generally downloaded from app stores, which are a type of digital distribution platforms.",
+        "p3": "Apps are broadly classified into three types: native apps, hybrid and web apps. Native applications are designed specifically for a mobile operating system, typically iOS or Android. Web apps are written in HTML5 or CSS and typically run through a browser. Hybrid apps are built using web technologies such as JavaScript, CSS, and HTML5 and function like web apps disguised in a native container."
+      }
+    },
+    "eCommerce": {
+      "title": "E-Commerce",
+      "subtitle": "What is e-commerce ?",
+      "content": {
+        "p1": "E-commerce is a field of digital economy that includes all financial and commercial transactions carried out using computer networks and the business processes associated with such transactions.",
+        "p2": "E-commerce includes:",
+        "p3": "1. B2B — abbreviation of «business-to-business» — Business-to-business commerce using applications through the Site. Instead of taking orders through sales representatives over the phone or email, orders are taken digitally, reducing overhead.",
+        "p4": "2. B2C — abbreviation of «business-to-Consumer —  Retailing refers to the activity of selling goods or services directly to consumers or end users. In a number of jurisdictions or regions, legal definitions of retailing state that at least 80 percent of sales must be made by end users.",
+        "p5": "3. C2C — abbreviation of «Consumer-to-Consumer — This method of conducting electronic commerce involves transactions between two consumers, neither of whom is an entrepreneur in the legal sense of the word."
+      }
+    },
+    "smm": {
+      "title": "SMM",
+      "subtitle": "What is SMM",
+      "content": {
+        "p1": "Social media marketing (SMM) uses social media and social +networks—like Facebook, Twitter, and Instagram—to market products and services, engage with existing customers, and reach new ones. The power of social media marketing comes from the unparalleled capacity of social media in three core marketing areas: connection, interaction, and customer data.",
+        "p2": "Social media marketing has transformed the way businesses are able to influence consumer behavior—from promoting 'content' that drives engagement to extracting personal data that makes messaging resonate with users. Because social media today is so ubiquitous, marketing techniques using these platforms are extremely important for businesses."
+      }
+    },
+    "documentation": {
+      "title": "WEB",
+      "subtitle": "Web-app and Web-page",
+      "content": {
+        "p1": "1. A web application (or web app) is application software that is accessed using a web browser. Web applications are delivered on the World Wide Web to users with an active network connection.",
+        "p2": "2. Web page - a document or information resource of the World Wide Web, which is accessed using a web browser."
+      }
+    },
+    "registration": {
+      "title": "Registration System",
+      "subtitle": "About Registration System.",
+      "content": {
+        "p1": "Automated software and hardware platform for registering event visitors, issuing a QR CODE badge, preparing reports, maintaining an online registration site, uploading registered online visitors to offline and automatic printing."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle1": "Leave us a message",
+    "subtitle2": "Info",
+    "input1": "Email",
+    "input2": "Phone",
+    "input3": "About your project",
+    "submitBtn": "Submit"
+  },
+  "lastOrder": {
+    "title": "Last order",
+    "number": "Number",
+    "date": "Date",
+    "status": "Status",
+    "operator": "Operator",
+    "operatorPhone": "Number of Operator"
+  },
+  "footer": {
+    "services": {
+      "label": "Services",
+      "child1": "Registration System",
+      "child2": "Mobile Applications",
+      "child3": "Telegram Bot",
+      "child4": "3D design",
+      "child5": "CRM",
+      "child6": "E-Commerce",
+      "child7": "Web Applications",
+      "child8": "SMM"
+    },
+    "aboutUs": {
+      "label": "Sections",
+      "child1": "Home",
+      "child2": "About Us",
+      "child3": "Gallery",
+      "child4": "Contact Us"
+    },
+    "partners": {
+      "label": "Partners"
+    },
+    "copyright": "© 2022 Texno Dargoh LLC. All rights reserved"
+  }
+}

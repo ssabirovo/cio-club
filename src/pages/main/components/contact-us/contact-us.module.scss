@@ -1,0 +1,259 @@
+.wrapper {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  .contact-us {
+    background: var(--white);
+    box-shadow: 0px 0px 85px -22px var(--circle-drop-shadow);
+    border-radius: 74px;
+    padding: 42px 57px;
+  }
+
+  .area {
+    height: 150px;
+  }
+
+  .title {
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 49px;
+    color: var(--primary);
+    margin-bottom: 50px;
+    text-align: center;
+    @media (max-width: 460px) {
+      font-size: 30px;
+    }
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 26px;
+
+      .submit-btn {
+        padding: 12px 42px;
+        background: var(--primary);
+        border-radius: 5px;
+        font-size: 21px;
+        line-height: 21px;
+        text-align: center;
+        border: none;
+        color: var(--white);
+        @media (max-width: 460px) {
+          width: 100%;
+        }
+        &:hover {
+          animation-name: example;
+          animation-duration: 0.3s;
+          border: 1px solid var(--primary);
+          background-color: var(--secondary);
+          color: var(--primary);
+        }
+      }
+    }
+  }
+
+  .subtitle {
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 27px;
+
+    color: var(--text);
+    margin-bottom: 39px;
+  }
+
+  .input {
+    border: 1px solid var(--link-text);
+    border-radius: 15px;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 23px;
+    width: 367px;
+    color: var(--link-text);
+    padding: 18px 0 18px 18px;
+    transition: 0.3s linear;
+    @media (max-width: 330px) {
+      padding: 10px 0 10px 10px;
+      font-size: 14px;
+    }
+    &:focus {
+      border: 1px solid var(--green) !important;
+    }
+  }
+
+  .box {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--link-text);
+    border-radius: 15px;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 23px;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    color: var(--link-text);
+    p {
+      padding: 0 10px 0 15px;
+      user-select: none;
+    }
+  }
+
+  .phone {
+    outline: none;
+    border: none !important;
+    border-left: 1px solid var(--link-text) !important;
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 23px;
+    width: 95.5%;
+
+    color: var(--link-text);
+    padding: 18px 0 18px 5px;
+  }
+
+  .error {
+    margin-top: -10px;
+    color: var(--red);
+    i {
+      color: var(--red);
+    }
+  }
+
+  .child {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 37px;
+
+    .map {
+      border: none;
+      width: 350px;
+      height: 280px;
+    }
+  }
+
+  .info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+    @media (max-width: 330px) {
+      gap: 5px;
+      a {
+        font-size: 12px !important;
+      }
+      svg {
+        width: 15px !important;
+      }
+    }
+    a {
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: var(--text);
+
+      &:hover {
+        color: var(--primary);
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .container {
+      display: block;
+
+      .form {
+        .submit-btn {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .input {
+      width: 93%;
+    }
+    .info-container {
+      .map {
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      display: block;
+
+      .form {
+        .submit-btn {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .contact-us {
+      padding: 45px 45px;
+    }
+
+    .title {
+      font-size: 40px;
+    }
+    .info-wrapper {
+      a {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    .contact-us {
+      padding: 45px 30px;
+    }
+    .title {
+      font-size: 30px;
+    }
+    .subtitle {
+      text-align: start;
+      font-size: 18px;
+    }
+    .info-container {
+      align-items: center;
+      .map {
+        width: 100%;
+        height: 250px;
+      }
+    }
+    .info-wrapper {
+      a {
+        font-size: 15px;
+        line-height: 15px;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@keyframes example {
+  0% {
+    transform: rotate(2deg);
+  }
+  50% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

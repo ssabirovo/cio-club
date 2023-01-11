@@ -1,0 +1,71 @@
+.wrapper {
+  z-index: 50;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: max-content;
+  height: max-content;
+
+  @media (max-width: 430px) {
+    bottom: 1rem;
+    right: 1rem;
+  }
+  .content {
+    height: max-content;
+    width: max-content;
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    transition: 0.1s linear;
+    background-color: var(--primary);
+    padding: 1rem;
+    border-radius: 50rem;
+    flex-direction: row;
+    cursor: pointer;
+
+    p {
+      display: none;
+    }
+
+    .card {
+      text-decoration: none;
+      pointer-events: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      background: none;
+      padding: 0;
+      transform: translate(-3px);
+      transition: 0.1s linear;
+
+
+      border-radius: 21rem;
+      color: var(--secondary);
+    }
+  }
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+.wOpened {
+  width: 100vw;
+  height: 100vh;
+  .content {
+    flex-direction: column;
+    background: none;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    transform: translate(50px);
+    p {
+      display: block;
+    }
+    .card {
+      pointer-events: all;
+      padding: 1rem;
+    }
+  }
+}

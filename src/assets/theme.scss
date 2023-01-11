@@ -1,0 +1,22 @@
+@mixin theme-light {
+  --primary: #4724be;
+  --secondary: #ececff;
+  --forHover: #dbdbfb;
+  --text: #464359;
+  --red: #ef2240;
+  --black: #000;
+  --white: #fff;
+  --green: #adff2f;
+  --modal-bg: #00000066;
+  --modal-bgG: #ccccff;
+  --phone-bg: #24be4f;
+  --telegram-bg: #489fdd;
+  --mail-bg: #e4e4e4;
+  --mail-color: #ee4a3b;
+  --circle-box-shadow: #4724be4a;
+  --circle-drop-shadow: #00000a40;
+  --navbar-box-shadow: #00000026;
+  --navbar-drop-shadow: #00000026;
+  --link-text: #7b7ef0;
+
+}

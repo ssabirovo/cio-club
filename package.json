@@ -1,0 +1,95 @@
+{
+  "name": "own-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@hookform/resolvers": "^2.9.10",
+    "@mui/material": "^5.10.15",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/antd": "^1.0.0",
+    "@types/classnames": "^2.3.1",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.11.59",
+    "@types/node-sass": "^4.11.3",
+    "@types/react": "^18.0.20",
+    "@types/react-dom": "^18.0.6",
+    "@types/react-icons": "^3.0.0",
+    "@types/react-slick": "^0.23.10",
+    "@types/yup": "^0.32.0",
+    "animate.css": "^4.1.1",
+    "antd": "^4.23.6",
+    "axios": "^1.2.0",
+    "classnames": "^2.3.2",
+    "gapi-script": "^1.2.0",
+    "i18next": "^22.0.6",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.0.1",
+    "lodash": "4.17.21",
+    "react": "^18.2.0",
+    "react-awesome-reveal": "^4.1.0",
+    "react-dom": "^18.2.0",
+    "react-google-login": "^5.2.2",
+    "react-hook-form": "^7.39.3",
+    "react-i18next": "^12.0.0",
+    "react-parallax-tilt": "^1.7.68",
+    "react-phone-number-input": "^3.2.13",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "react-toastify": "^9.1.1",
+    "react-yandex-maps": "^4.6.0",
+    "sass": "^1.54.9",
+    "slick-carousel": "^1.8.1",
+    "typescript": "^4.8.3",
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.186",
+    "@types/react-router-dom": "^5.3.3",
+    "babel-plugin-named-exports-order": "^0.0.2",
+    "dts-css-modules-loader": "^2.0.1",
+    "prop-types": "^15.8.1",
+    "webpack": "^5.74.0"
+  }
+}

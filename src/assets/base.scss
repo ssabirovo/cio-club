@@ -1,0 +1,23 @@
+@import "./theme.scss";
+
+@import "./typography.scss";
+* {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+:root {
+  @include theme-light;
+}
+
+section {
+  padding: 1rem 10rem;
+  @media (max-width: 1200px) {
+    padding: 1rem 6rem;
+  }
+  @media (max-width: 940px) {
+    padding: 1rem 2rem;
+  }
+}

@@ -1,0 +1,67 @@
+.wrapper {
+  :global {
+    .button_wrapper {
+      margin-top: 50px;
+      display: block;
+      margin: auto;
+    }
+  }
+  .title {
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 49px;
+    text-align: center;
+    color: var(--primary);
+    @media (max-width: 460px) {
+      font-size: 30px;
+    }
+  }
+
+  .close {
+    padding: 20px 0;
+    display: grid;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-flow: row dense;
+    gap: 10px;
+    transition: 1s;
+  }
+
+  .open {
+    max-height: 600px;
+    overflow: hidden;
+    transition: 1s;
+  }
+
+  .btn-wrapper {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.03);
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .big {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .horizontal {
+    grid-column: span 2;
+  }
+
+  .small {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}

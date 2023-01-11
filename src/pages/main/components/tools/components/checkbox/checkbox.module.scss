@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  gap: 1rem;
+  margin: 0.6rem;
+  align-items: center;
+  .checkBox {
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-radius: 500px;
+    border: 5px solid var(--white);
+    outline: 5px solid var(--primary);
+    transition: 0.1s linear;
+    &:hover {
+      background-color: var(--primary);
+    }
+    &:active {
+      border: 5px solid var(--primary);
+      background-color: var(--primary);
+    }
+  }
+  .checked {
+    background-color: var(--primary);
+  }
+
+  .label {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 3px;
+    text-transform: capitalize;
+  }
+}

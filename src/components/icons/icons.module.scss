@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size, 100%);
+  height: var(--height, 100%);
+
+  
+  svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+  }
+}

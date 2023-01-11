@@ -1,0 +1,124 @@
+.container {
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 49px;
+    text-align: center;
+    color: var(--primary);
+    @media (max-width: 460px) {
+      font-size: 30px;
+    }
+  }
+}
+.wrapper {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  height: max-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  //   gap: 9rem;
+  @media (max-width: 570px) {
+    flex-direction: column;
+    gap: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 1rem;
+  }
+
+  h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 32px;
+    color: var(--text);
+    width: max-content;
+    @media (max-width: 1040px) {
+      font-size: 26px;
+    }
+    @media (max-width: 810px) {
+      font-size: 16px;
+    }
+  }
+  p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+
+    color: var(--link-text);
+    @media (max-width: 1040px) {
+      font-size: 18px;
+    }
+    @media (max-width: 810px) {
+      font-size: 16px;
+    }
+  }
+  .left {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    @media (max-width: 570px) {
+      p {
+        display: none;
+      }
+      h3 {
+        display: none;
+      }
+      div {
+        display: none;
+      }
+      align-items: center;
+    }
+    img {
+      width: 250px;
+      @media (max-width: 1040px) {
+        width: 160px;
+      }
+      @media (max-width: 810px) {
+        width: 120px;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: flex-end;
+    @media (max-width: 570px) {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 2rem;
+    }
+    img {
+      width: 90%;
+      @media (max-width: 810px) {
+        width: 80%;
+      }
+    }
+    h3 {
+      display: none;
+      @media (max-width: 570px) {
+        display: block;
+      }
+    }
+    p {
+      display: none;
+      @media (max-width: 570px) {
+        display: block;
+      }
+    }
+    div {
+      display: none;
+      @media (max-width: 570px) {
+        display: inline-block;
+      }
+    }
+  }
+}

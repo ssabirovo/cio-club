@@ -1,0 +1,154 @@
+.wrapper {
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 49px;
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 1rem;
+  }
+  button {
+    color: var(--primary) !important;
+  }
+
+  .oders-wrapper {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 16px;
+      width: 33%;
+      text-align: center;
+
+      color: #4724be;
+      margin-bottom: 15px;
+    }
+  }
+
+  .order {
+    padding: 20px 31px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background: #ececff;
+
+    span {
+      width: 33%;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 16px;
+
+      text-align: center;
+
+      color: #4724be;
+    }
+  }
+  .table {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    gap: 20px;
+    height: 460px;
+    overflow-x: scroll;
+  }
+  :global {
+    .MuiTabs-flexContainer .css-heg063-MuiTabs-flexContainer {
+      overflow: scroll !important;
+    }
+
+    .MuiBox-root {
+      border: none;
+    }
+    .MuiTabs-flexContainer {
+      overflow-y: scroll;
+    }
+    .MuiTabs-indicator {
+      background-color: var(--primary);
+    }
+    ::-webkit-scrollbar {
+      width: 0;
+      height: 0;
+    }
+
+    .MuiTab-root {
+      color: var(--red) !important;
+      background: var(--secondary) !important;
+      border-radius: 5px 5px 0px 0px !important;
+      border-bottom: 2px solid var(--primary) !important;
+      padding: 12px 16px 10px !important;
+      font-weight: 600 !important;
+      font-size: 16px !important;
+      line-height: 16px !important;
+
+      text-align: center !important;
+
+      color: var(--link-text) !important;
+      white-space: initial !important;
+      &:first-child {
+        margin-left: 20px !important;
+      }
+      &:last-child {
+        margin-right: 20px !important;
+      }
+    }
+    .MuiTabs-indicator {
+      background-color: transparent !important;
+    }
+
+    .Mui-selected {
+      font-weight: 600 !important;
+      font-size: 16px !important;
+      line-height: 16px !important;
+      text-align: center !important;
+      color: var(--primary) !important;
+      border: 2px solid var(--primary) !important;
+      border-bottom: 0px !important;
+      background: var(--white) !important;
+      padding: 12px 16px 10px !important;
+
+      &::after {
+        content: "" !important;
+        position: absolute !important;
+        bottom: -1px !important;
+        height: 3px !important;
+        background-color: var(--white) !important;
+       
+      }
+    }
+    
+
+    .MuiTabs-flexContainer {
+      gap: 15px;
+    }
+
+    .MuiTabs-flexContainer {
+      overflow-y: scroll !important;
+    }
+    .MuiTabs-indicator {
+      background-color: var(--primary);
+    }
+  }
+
+  .line {
+    background-color: var(--primary);
+    z-index: -10;
+    height: 2px;
+    position: relative;
+    bottom: -48px;
+    width: calc(100vw - 300px);
+  }
+
+  .order {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+}

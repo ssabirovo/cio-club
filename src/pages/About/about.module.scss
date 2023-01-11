@@ -1,0 +1,41 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  background: url("../../assets/images/bg-view.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-bottom: 5rem;
+  justify-content: center;
+  h1 {
+    padding: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 46px;
+    color: var(--primary);
+    text-align: center;
+  }
+  h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 31px;
+    color: var(--primary);
+    padding-top: 1rem;
+  }
+  p {
+    padding-top: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 26px;
+    color: var(--text);
+  }
+  .images {
+    img {
+      width: 100%;
+    }
+  }
+}

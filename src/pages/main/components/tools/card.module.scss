@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary);
+  width: max-content;
+  padding: 1rem;
+  gap: 1rem;
+  border-radius: 10px;
+  color: var(--text);
+  width: 100px;
+  img {
+    width: 80px;
+  }
+}
