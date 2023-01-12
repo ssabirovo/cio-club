@@ -25,7 +25,7 @@ const Main: React.FC<MainProps> = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
             non!
           </p>
-          <button className={cls.btn}>Bog’lanish</button>
+          <button className={cls.btn}>Bog’lanish hello</button>
         </div>
       </section>
 
@@ -33,7 +33,7 @@ const Main: React.FC<MainProps> = () => {
 
       {/* <PhotoCarusel /> */}
 
-      {/* <Gallery /> */}
+      <Gallery />
 
       <Partners />
 
