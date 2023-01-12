@@ -58,6 +58,13 @@
       align-items: center;
       gap: 59px 50px;
       grid-template-columns: 1fr 1fr 1fr;
+      @media (max-width: 718px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+      @media (max-width: 510px) {
+        grid-template-columns: 1fr;
+      }
     }
     margin-bottom: 60px;
   }

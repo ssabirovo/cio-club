@@ -1,6 +1,11 @@
 export { default as hamburger } from "./hamburger";
 export { default as Person } from "./person";
 export { default as Case } from "./case";
+export { default as seamstress } from "./seamstress";
+export { default as eloquent } from "./eloquent";
+export { default as psychology } from "./psychology";
+export { default as cosmetology } from "./cosmetology";
+export { default as events } from "./events";
 export { default as Calendar } from "./calendar";
 export { default as Orders } from "./orders";
 export { default as LogOut } from "./log-out";

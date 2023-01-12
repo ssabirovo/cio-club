@@ -10,6 +10,7 @@ import PhotoCarusel from "./components/photo-carusel";
 import Gallery from "./components/gallery";
 import Partners from "./components/partners";
 import Event from "./components/event/event";
+import Directions from "./components/directions/directions";
 
 interface MainProps {}
 
@@ -25,12 +26,12 @@ const Main: React.FC<MainProps> = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
             non!
           </p>
-          <button className={cls.btn}>Bog’lanish hello</button>
+          <button className={cls.btn}>Bog’lanish</button>
         </div>
       </section>
 
       <Event />
-
+      <Directions />
       {/* <PhotoCarusel /> */}
 
       <Gallery />

@@ -1,0 +1,51 @@
+.wrapper {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  .title {
+    font-family: "Okta Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 89px;
+    text-align: center;
+
+    color: var(--primary);
+    margin-bottom: 34px;
+  }
+
+  .directions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    .direction {
+      width: 20%;
+      background: var(--card-bg);
+      border-radius: 8px;
+      padding: 26px 43px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+      cursor: pointer;
+      @media (max-width: 808px) {
+        width: 30%;
+      }
+      @media (max-width: 544px) {
+        width: 100%;
+      }
+      p {
+        text-align: center;
+        font-family: "Okta Neue";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 31px;
+
+        color: var(--primary);
+      }
+    }
+  }
+}
