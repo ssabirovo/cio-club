@@ -13,6 +13,9 @@
 }
 
 section {
+  max-width: 1440px;
+  margin: auto;
+  display: block;
   padding: 1rem 10rem;
   @media (max-width: 1200px) {
     padding: 1rem 6rem;

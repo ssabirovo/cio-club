@@ -1,6 +1,7 @@
 export { default as hamburger } from "./hamburger";
 export { default as Person } from "./person";
 export { default as Case } from "./case";
+export { default as Calendar } from "./calendar";
 export { default as Orders } from "./orders";
 export { default as LogOut } from "./log-out";
 export { default as company } from "./company";

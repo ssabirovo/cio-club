@@ -1,8 +1,8 @@
 @mixin theme-light {
-  --primary: #4724be;
-  --secondary: #ececff;
+  --primary: #3548d4;
+  --secondary: #fbfbfd;
   --forHover: #dbdbfb;
-  --text: #464359;
+  --text: #8c8c8c;
   --red: #ef2240;
   --black: #000;
   --white: #fff;
@@ -18,5 +18,6 @@
   --navbar-box-shadow: #00000026;
   --navbar-drop-shadow: #00000026;
   --link-text: #7b7ef0;
-
+  --border-color: #ddd;
+  --secondary-tex: #1d1d1f;
 }

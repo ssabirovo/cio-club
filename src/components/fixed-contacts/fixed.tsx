@@ -5,7 +5,7 @@ import cls from "./fixed.module.scss";
 
 interface FixedProps {}
 
-const FixedContcts: React.FC<FixedProps> = () => {
+const FixedContacts: React.FC<FixedProps> = () => {
   const [opened, setState] = useState(false);
 
   return (
@@ -63,4 +63,4 @@ const FixedContcts: React.FC<FixedProps> = () => {
   );
 };
 
-export default FixedContcts;
+export default FixedContacts;

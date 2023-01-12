@@ -1,17 +1,17 @@
 import React, { useEffect, useRef, useState } from "react";
-import Logo from "../../assets/images/tedaLOGO.jpg";
+import Logo from "../../assets/images/logo2.png";
 import Button from "../button/button";
 import Icons from "../icons";
 import "animate.css";
-import cls from "./navbar.module.scss";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import BasicSelect from "./components/drop/drop";
-import FixedContcts from "../fixed-contacts/fixed";
 import ImgCircle from "./components/imgCircle/imgCircle";
 import Register from "../register";
 import Modal from "../modal";
 import { links, MediaLinks } from "./inside";
+import cls from "./navbar.module.scss";
+import Icon from "../icons/icons";
 
 interface NavbarProps {}
 
@@ -54,9 +54,6 @@ const Navbar: React.FC<NavbarProps> = () => {
   return (
     <div className={cls.container}>
       <section className={cls.wrapper}>
-        <div className={cls.logo}>
-          <img src={Logo} alt="" onClick={() => handleNavigate("#home")} />
-        </div>
         <div className={cls.links}>
           {links.map(({ address, content }) => (
             <div key={content} onClick={() => handleNavigate(address)}>
@@ -64,15 +61,35 @@ const Navbar: React.FC<NavbarProps> = () => {
             </div>
           ))}
         </div>
-        <div className={cls.corner}>
-          <BasicSelect color="primary" />
 
-          {isUser ? (
+        <div className={cls.logo}>
+          <img src={Logo} alt="" onClick={() => handleNavigate("#home")} />
+        </div>
+
+        <div className={cls.corner}>
+          <div className={cls.contacts}>
+            <div className={cls.phones}>
+              <Icon color="var(--white)" name="phone" />
+              <div className={cls.box}>
+                <p>90-378-06-56</p>
+                <p>94-442-98-89</p>
+              </div>
+            </div>
+            <div className={cls.telegram}>
+              <Icon color="var(--white)" name="telegram" />
+              <p>@ibrat.club.uz</p>
+            </div>
+          </div>
+
+          <BasicSelect color="white" />
+
+          {/* {isUser ? (
             <ImgCircle close={setUser} mobile={false} />
           ) : (
             <Button onClick={() => setActive(true)} title={"Login"} />
-          )}
+          )} */}
         </div>
+
         {!defaultEmail && (
           <Modal
             active={active}
@@ -80,6 +97,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             setActive={setActive}
           />
         )}
+
         <div
           onClick={() => {
             toggleHam();
@@ -89,7 +107,9 @@ const Navbar: React.FC<NavbarProps> = () => {
           <Icons name="hamburger" size={30} color="var(--primary)" />
         </div>
       </section>
-      <FixedContcts />
+
+      {/* second navbar */}
+
       <div ref={hamRef} className={cls.hamburger}>
         <div className={cls.xmark}>
           {isUser ? (

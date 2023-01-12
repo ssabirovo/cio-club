@@ -1,10 +1,9 @@
 .container {
-  position: sticky;
+  position: fixed;
   top: 0;
   width: 100%;
   transition: 2s linear;
-  background: var(--white);
-  z-index: 20;
+
   .hamburger {
     position: fixed;
     top: 0;
@@ -76,18 +75,25 @@
 }
 .wrapper {
   display: flex;
-  background-color: var(--bg-primary);
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  // height: 5vh;
-  border-bottom: 1px solid var(--primary);
+  background: url(../../assets/svg/glass.svg),
+    radial-gradient(
+      90.16% 143.01% at 15.32% 21.04%,
+      rgba(69, 70, 85, 0.07) 0%,
+      rgba(98, 98, 99, 0.07) 77.08%,
+      rgba(142, 155, 167, 0) 100%
+    );
+  background-blend-mode: overlay, normal;
+  backdrop-filter: blur(40px);
 
   @media (max-width: 640px) {
     height: max-content;
   }
   .logo {
     width: 98.7px;
+    text-align: center;
+
     img {
       width: 50%;
     }
@@ -99,10 +105,11 @@
     }
   }
   .links {
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 20px;
 
     @media (max-width: 840px) {
       display: none;
@@ -111,25 +118,51 @@
       text-decoration: none;
       color: var(--primary);
       transition: all 0.2s linear;
-      background: var(--primary);
       cursor: pointer;
-      &:hover {
-        padding-bottom: 1px;
-        letter-spacing: 1px;
-      }
+      // &:hover {
+      //   padding-bottom: 1px;
+      //   letter-spacing: 1px;
+      // }
       p {
-        background-color: var(--white);
+        font-family: "Gordita";
+        font-style: normal;
+        font-weight: 400;
         font-size: 16px;
-        padding: 7px 0;
-        margin: 0;
+        line-height: 17px;
+        color: var(--white);
       }
     }
   }
   .corner {
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.9rem;
+
+    .contacts {
+      display: flex;
+      align-items: center;
+      gap: 29px;
+    }
+    .phones,
+    .telegram {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      p {
+        font-family: "Segoe UI";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+
+        color: var(--white);
+      }
+    }
+
     @media (max-width: 840px) {
       display: none;
     }

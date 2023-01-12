@@ -1,42 +1,57 @@
 .hero {
-  position: relative;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 10vh;
-  
-
-  background: url("../../assets/images/heroBG2.png");
+  height: 100vh;
+  background: url("../../assets/images/ibrat-club-bg.jpg");
   background-position: center;
-  background-size: contain;
-  .tilt {
-    position: absolute;
-    z-index: 99;
-    img {
-      @media (max-width: 420px) {
-        width: 80px;
-      }
-    }
-  }
-
-  .circle-graph {
-    position: relative;
-    top: -61px;
-    left: -61px;
-    z-index: 10;
-    width: 40rem;
-    height: 40rem;
-    margin: calc(100px / 2 + 0px);
-    @media (max-height: 700px) {
-      width: 30rem;
-      height: 30rem;
-    }
-  }
-  .adminBtn {
-    width: 100vw;
+  background-attachment: fixed;
+  background-size: cover;
+  .info {
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    max-width: 700px;
+
+    .title {
+      font-family: "Okta Neue";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 80px;
+      line-height: 125px;
+      display: flex;
+      align-items: center;
+
+      color: var(--secondary);
+    }
+
+    .paragraph {
+      font-family: "Gordita";
+      font-style: normal;
+      max-width: 541px;
+      font-weight: 400;
+      font-size: 29px;
+      line-height: 31px;
+      display: flex;
+      align-items: center;
+
+      color: var(--white);
+      margin: 24px 0 40px;
+    }
+
+    .btn {
+      width: max-content;
+      background: #fbfbfd;
+      border-radius: 4px;
+      font-family: "Gordita";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+
+      color: var(--black);
+      padding: 15px 40px;
+      border: none;
+    }
   }
 }
