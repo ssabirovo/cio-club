@@ -6,43 +6,36 @@ interface FlagsProps {
 
 export const Photos: FlagsProps[] = [
   {
-    video: "https://www.youtube.com/embed/0k3Vn9J5qI8",
+    ulr: "https://images.unsplash.com/photo-1558008258-3256797b43f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNlbWluYXJ8ZW58MHx8MHx8&w=1000&q=80",
     className: "horizontal",
   },
   {
-    video: "https://www.youtube.com/embed/FnZQBybUozs",
+    ulr: "https://images.unsplash.com/photo-1558008258-3256797b43f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNlbWluYXJ8ZW58MHx8MHx8&w=1000&q=80",
     className: "horizontal",
   },
   {
-    video: "https://www.youtube.com/embed/lCLaDAgN3-s",
+    ulr: "https://images.unsplash.com/photo-1558008258-3256797b43f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNlbWluYXJ8ZW58MHx8MHx8&w=1000&q=80",
     className: "horizontal",
   },
   {
-    video: "https://www.youtube.com/embed/KacefT9Fm74",
+    ulr: "https://images.unsplash.com/photo-1558008258-3256797b43f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNlbWluYXJ8ZW58MHx8MHx8&w=1000&q=80",
     className: "horizontal",
   },
   {
-    video: "https://www.youtube.com/embed/BVSof2b6rGE",
-    className: "horizontal",
+    ulr: "https://images.unsplash.com/photo-1558008258-3256797b43f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNlbWluYXJ8ZW58MHx8MHx8&w=1000&q=80",
+    className: "big",
+  },
+
+  {
+    ulr: "https://images.unsplash.com/photo-1558008258-3256797b43f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNlbWluYXJ8ZW58MHx8MHx8&w=1000&q=80",
+    className: "big",
   },
   {
-    ulr: "https://files.fm/thumb_show.php?i=ja58r7fgk",
+    ulr: "https://images.unsplash.com/photo-1558008258-3256797b43f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNlbWluYXJ8ZW58MHx8MHx8&w=1000&q=80",
     className: "small",
   },
   {
-    ulr: "https://files.fm/thumb_show.php?i=sx4atn97m",
-    className: "small",
-  },
-  {
-    ulr: "https://files.fm/thumb_show.php?i=7shadr5se",
-    className: "horizontal",
-  },
-  {
-    ulr: "https://files.fm/thumb_show.php?i=v9nw2ybvy",
-    className: "horizontal",
-  },
-  {
-    ulr: "https://files.fm/thumb_show.php?i=feajhnjbt",
+    ulr: "https://images.unsplash.com/photo-1558008258-3256797b43f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNlbWluYXJ8ZW58MHx8MHx8&w=1000&q=80",
     className: "horizontal",
   },
 ];

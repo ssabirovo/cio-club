@@ -4,9 +4,6 @@
 
   .contact-us {
     background: var(--white);
-    box-shadow: 0px 0px 85px -22px var(--circle-drop-shadow);
-    border-radius: 74px;
-    padding: 42px 57px;
   }
 
   .area {
@@ -34,6 +31,9 @@
       display: flex;
       flex-direction: column;
       gap: 26px;
+      border: 1px solid #dddddd;
+      border-radius: 8px;
+      padding: 26px 69px 48px;
 
       .submit-btn {
         padding: 12px 42px;
@@ -129,27 +129,27 @@
   .child {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
     align-items: flex-start;
     justify-content: space-between;
+  }
+
+  .info {
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 26px 69px 48px;
   }
 
   .info-container {
     display: flex;
     flex-direction: column;
     gap: 37px;
-
-    .map {
-      border: none;
-      width: 350px;
-      height: 280px;
-    }
   }
 
   .info-wrapper {
     display: flex;
     align-items: center;
-    gap: 21px;
+    gap: 50px;
     @media (max-width: 330px) {
       gap: 5px;
       a {
@@ -172,9 +172,17 @@
     }
   }
 
+  .map {
+    border: none;
+    width: 100%;
+    height: 308px;
+    margin-top: 55px;
+  }
+
   @media (max-width: 1024px) {
     .container {
-      display: block;
+      flex-direction: column;
+      gap: 40px;
 
       .form {
         .submit-btn {
@@ -185,26 +193,15 @@
     .input {
       width: 93%;
     }
-    .info-container {
-      .map {
-        width: 100%;
-      }
-    }
   }
 
   @media (max-width: 768px) {
     .container {
-      display: block;
-
       .form {
         .submit-btn {
           margin-bottom: 30px;
         }
       }
-    }
-
-    .contact-us {
-      padding: 45px 45px;
     }
 
     .title {
@@ -219,9 +216,6 @@
   }
 
   @media (max-width: 576px) {
-    .contact-us {
-      padding: 45px 30px;
-    }
     .title {
       font-size: 30px;
     }
@@ -231,6 +225,7 @@
     }
     .info-container {
       align-items: center;
+
       .map {
         width: 100%;
         height: 250px;

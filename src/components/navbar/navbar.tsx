@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import Logo from "../../assets/images/logo2.png";
+import Logo from "../../assets/images/PHG-1.png";
 import Button from "../button/button";
 import Icons from "../icons";
 import "animate.css";
@@ -10,13 +10,15 @@ import ImgCircle from "./components/imgCircle/imgCircle";
 import Register from "../register";
 import Modal from "../modal";
 import { links, MediaLinks } from "./inside";
-import cls from "./navbar.module.scss";
 import Icon from "../icons/icons";
+import cx from "classnames";
+import cls from "./navbar.module.scss";
 
 interface NavbarProps {}
 
 const Navbar: React.FC<NavbarProps> = () => {
   const navigate = useNavigate();
+  const [navbar, setNavbar] = useState(false);
   const [active, setActive] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [isUser, setUser] = useState(false);
@@ -32,6 +34,16 @@ const Navbar: React.FC<NavbarProps> = () => {
       setUser(true);
     }
   }, []);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 780) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
 
   const toggleHam = (hash?: string): void => {
     document.body.style.overflow = `${!isActive ? "hidden" : "auto"}`;
@@ -53,7 +65,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <div className={cls.container}>
-      <section className={cls.wrapper}>
+      <section className={cx(cls.wrapper, navbar === true && cls.active)}>
         <div className={cls.links}>
           {links.map(({ address, content }) => (
             <div key={content} onClick={() => handleNavigate(address)}>

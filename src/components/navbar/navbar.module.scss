@@ -3,6 +3,7 @@
   top: 0;
   width: 100%;
   transition: 2s linear;
+  z-index: 1;
 
   .hamburger {
     position: fixed;
@@ -91,11 +92,11 @@
     height: max-content;
   }
   .logo {
-    width: 98.7px;
+    width: 110px;
     text-align: center;
 
     img {
-      width: 50%;
+      width: 100%;
     }
     @media (max-width: 640px) {
       width: 70px;
@@ -174,4 +175,8 @@
       display: inline-block;
     }
   }
+}
+
+.active {
+  background-color: rgb(18, 18, 18);
 }

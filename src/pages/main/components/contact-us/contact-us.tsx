@@ -1,10 +1,8 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
-import cls from "./contact-us.module.scss";
 import { Controller, useForm } from "react-hook-form";
 import { ContactInfo } from "./inside";
 import Icons from "../../../../components/icons";
-import cx from "classnames";
 import Reveal, { Zoom } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import axios from "axios";
@@ -12,6 +10,8 @@ import { toast } from "react-toastify";
 import { useTranslation } from "react-i18next";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import cx from "classnames";
+import cls from "./contact-us.module.scss";
 
 interface ContactUsProps {}
 
@@ -83,20 +83,19 @@ const ContactUs: React.FC<ContactUsProps> = () => {
 
         <div className={cls.container}>
           <div className={cls.apply}>
-            <Reveal
-              triggerOnce={true}
-              duration={500}
-              delay={100}
-              keyframes={customAnimationTitle}
-            >
-              <h2 className={cls.subtitle}>{t("contact.subtitle1")}</h2>
-            </Reveal>
-
             <form
               id="form"
               className={cls.form}
               onSubmit={handleSubmit(onSubmit)}
             >
+              <Reveal
+                triggerOnce={true}
+                duration={500}
+                delay={100}
+                keyframes={customAnimationTitle}
+              >
+                <h2 className={cls.subtitle}>{t("contact.subtitle1")}</h2>
+              </Reveal>
               <Controller
                 name="email"
                 control={control}
@@ -262,20 +261,19 @@ const ContactUs: React.FC<ContactUsProps> = () => {
                   </Reveal>
                 ))}
               </div>
-
-              <Zoom triggerOnce={true} duration={900} delay={100}>
-                <p>
-                  <iframe
-                    className={cls.map}
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d713.8555574636114!2d69.3255393849019!3d41.29375551902539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8baaaaaaaac1%3A0x4a00aeebddd9ed18!2sTEXNO%20DARGOH!5e0!3m2!1suz!2s!4v1668419984766!5m2!1suz!2s"
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
-                </p>
-              </Zoom>
             </div>
           </div>
         </div>
+        <Zoom triggerOnce={true} duration={900} delay={100}>
+          <p>
+            <iframe
+              className={cls.map}
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d713.8555574636114!2d69.3255393849019!3d41.29375551902539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8baaaaaaaac1%3A0x4a00aeebddd9ed18!2sTEXNO%20DARGOH!5e0!3m2!1suz!2s!4v1668419984766!5m2!1suz!2s"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </p>
+        </Zoom>
       </div>
     </section>
   );
