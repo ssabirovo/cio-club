@@ -9,8 +9,9 @@ import ContactUs from "./components/contact-us";
 import PhotoCarusel from "./components/photo-carusel";
 import Gallery from "./components/gallery";
 import Partners from "./components/partners";
-import Event from "./components/event/event";
-import Directions from "./components/directions/directions";
+import Event from "./components/event";
+import Directions from "./components/directions";
+import OurWork from "./components/our-work";
 
 interface MainProps {}
 
@@ -39,6 +40,8 @@ const Main: React.FC<MainProps> = () => {
       <Partners />
 
       <ContactUs />
+
+      <OurWork />
 
       <Footer />
     </div>
