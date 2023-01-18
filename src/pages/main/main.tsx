@@ -35,15 +35,13 @@ const Main: React.FC<MainProps> = () => {
       <Directions />
       {/* <PhotoCarusel /> */}
 
-      <Gallery />
+      <OurWork />
 
       <Partners />
 
       <ContactUs />
 
-      <OurWork />
-
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

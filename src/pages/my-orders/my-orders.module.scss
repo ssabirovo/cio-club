@@ -6,15 +6,26 @@
 .order {
   height: calc(100vh - 117px);
   width: calc(100vw - 300px);
+  padding: 38px 0 0 65px;
 
   .title {
-    margin: 48px 0 37px 72px;
     font-weight: 600;
     font-size: 29px;
     line-height: 35px;
 
     color: var(--primary);
   }
+
+  .description {
+    margin: 13px 0 38px;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 @media (max-width: 1023px) {

@@ -1,6 +1,15 @@
 .wrapper {
 }
 
+.title {
+  font-weight: 400;
+  font-size: 57px;
+  line-height: 89px;
+  text-align: center;
+
+  color: #3548d4;
+}
+
 .gallery {
   -webkit-column-count: 3;
   -moz-colum-count: 3;

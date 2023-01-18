@@ -57,12 +57,12 @@ const OurWork: React.FC<OurWorkProps> = () => {
   };
   return (
     <div className={cls.wrapper}>
-      <h2>Image Gallery</h2>
+      <h2 className={cls.title}>Image Gallery</h2>
       <div className={cx(cls.model, model && cls.open)}>
         <img src={tempImg} alt="" />
         <div className={cls.icon}>
           <Icon
-          size={24}
+            size={24}
             onClick={() => setModel(false)}
             className={cls.xMark}
             name="xMark"

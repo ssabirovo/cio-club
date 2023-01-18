@@ -1,6 +1,12 @@
 @import "./theme.scss";
 
 @import "./typography.scss";
+
+@font-face {
+  font-family: GraublauWeb;
+  src: url("../fonts/OktaNeue-Black.ttf") format("ttf");
+}
+
 * {
   font-family: "Josefin Sans", sans-serif;
   margin: 0;

@@ -87,6 +87,8 @@
     );
   background-blend-mode: overlay, normal;
   backdrop-filter: blur(40px);
+  padding-top: 0;
+  padding-bottom: 0;
 
   @media (max-width: 640px) {
     height: max-content;

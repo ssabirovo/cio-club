@@ -1,22 +1,21 @@
 import React, { useState } from "react";
-import cls from "./event.module.scss";
+import cls from "./all-event.module.scss";
 import cx from "classnames";
 import Card from "./components/card/card";
-import Button from "../../../../components/button/button";
-import { useNavigate } from "react-router-dom";
+import Navbar from "../../components/navbar";
 
-interface EventProps {}
+interface AllEventProps {}
 
 const tablists = [
   { idx: 0, key: "Oldingi" },
   { idx: 1, key: "Hozirgi" },
 ];
 
-const Event: React.FC<EventProps> = () => {
-  const navigate = useNavigate();
+const AllEvent: React.FC<AllEventProps> = () => {
   const [index, setIndex] = useState(1);
   return (
     <section className={cls.events}>
+      <Navbar />
       <h2 className={cls.title}>Tadbirlar</h2>
       <div className={cls.tablist}>
         {tablists.map(({ idx, key }) => (
@@ -39,6 +38,9 @@ const Event: React.FC<EventProps> = () => {
           <Card statusColor="#CBCBCB" />
           <Card statusColor="#CBCBCB" />
           <Card statusColor="#CBCBCB" />
+          <Card statusColor="#CBCBCB" />
+          <Card statusColor="#CBCBCB" />
+          <Card statusColor="#CBCBCB" />
         </div>
       </div>
       <div className={cls["tab-content"]} hidden={index !== 1}>
@@ -49,15 +51,13 @@ const Event: React.FC<EventProps> = () => {
           <Card />
           <Card />
           <Card />
+          <Card />
+          <Card />
+          <Card />
         </div>
       </div>
-      <Button
-        onClick={() => navigate("/events")}
-        className="button"
-        title="Yana"
-      />
     </section>
   );
 };
 
-export default Event;
+export default AllEvent;

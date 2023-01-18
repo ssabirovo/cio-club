@@ -9,14 +9,14 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import MyAccount from "./pages/my-account";
 import MyOrders from "./pages/my-orders";
-
+import AllEvent from "./pages/all-event";
 
 function App() {
   const [state] = useState({
     aboutPageContent: "Telegram Bot",
     lang: "uz",
   });
-   
+
   return (
     <Suspense fallback={null}>
       <Context.Provider value={state}>
@@ -24,6 +24,7 @@ function App() {
           <Route path="/" element={<Main />} />
           <Route path="/about/:type" element={<About />} />
           <Route path="/personal" element={<MyAccount />} />
+          <Route path="/events" element={<AllEvent />} />
           <Route path="/orders" element={<MyOrders />} />
         </Routes>
       </Context.Provider>{" "}

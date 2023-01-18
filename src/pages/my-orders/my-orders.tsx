@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from "react";
 import cls from "./my-orders.module.scss";
 import SideBar from "../../components/side-bar/side-bar";
-import Navbar from "../../components/navbar/navbar";
 import axios from "axios";
-import OrderTab from "./components/tab/order-tab";
 import SecondBar from "../../components/second-bar/second-bar";
+import Card from "../main/components/event/components/card/card";
 
 interface MyAccountProps {}
 
@@ -25,14 +24,17 @@ const MyAccount: React.FC<MyAccountProps> = () => {
   console.log("data order", data);
   return (
     <>
-      <Navbar />
       <SecondBar />
 
       <div className={cls.wrapper}>
         <SideBar />
         <div className={cls.order}>
-          <h1 className={cls.title}>Mening buyurtmalarim</h1>
-          <OrderTab data={data} />
+          <h1 className={cls.title}>Tadbirlar</h1>
+          <p className={cls.description}>Men qatnashmoqchi bo’gan tadbirlar</p>
+          <div className={cls.container}>
+            <Card />
+            <Card />
+          </div>
         </div>
       </div>
     </>

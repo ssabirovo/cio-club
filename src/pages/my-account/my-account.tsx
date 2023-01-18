@@ -40,7 +40,7 @@ const MyAccount: React.FC<MyAccountProps> = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className={cls.wrapper}>
         <SideBar />
         <SecondBar />

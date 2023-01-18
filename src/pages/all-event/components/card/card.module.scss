@@ -1,0 +1,67 @@
+.card {
+  padding: 13px 20px;
+  background: #f9f9f9;
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  .card-top {
+    display: flex;
+
+    justify-content: space-between;
+    .info {
+      h3 {
+        font-family: "Okta Neue";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 47px;
+
+        color: var(--primary);
+      }
+      p {
+        font-family: "Gordita";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.05em;
+
+        color: var(--text);
+      }
+    }
+    .status {
+      width: 18px;
+      height: 18px;
+      border-radius: 100%;
+      background: #8ed435;
+    }
+  }
+
+  .card-bottom {
+    .info-bottom {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 18px;
+
+      p {
+        font-family: "Gordita";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 15px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.05em;
+
+        color: #8c8c8c;
+
+        color: var(--text);
+      }
+    }
+  }
+}

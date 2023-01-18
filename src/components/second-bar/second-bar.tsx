@@ -17,8 +17,8 @@ type itemsType = {
 const items: itemsType[] = [
   { icon: "personal", link: "/personal", title: "Shaxsiy Ma'lumotlar" },
   { icon: "order", link: "/orders", title: "Buyurtmalar" },
-  { icon: "company", link: "/companies", title: "Mening korxonalarim" },
-  { icon: "vacancy", link: "/vacancy", title: "Mening vakansiyalarim" },
+  // { icon: "company", link: "/companies", title: "Mening korxonalarim" },
+  // { icon: "vacancy", link: "/vacancy", title: "Mening vakansiyalarim" },
   { icon: "logOut", link: "/", title: "Asosiy sahifaga o'tish" },
 ];
 
