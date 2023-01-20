@@ -1,17 +1,11 @@
 import React from "react";
-
-import Footer from "../../components/footer";
 import Navbar from "../../components/navbar";
-import cls from "./main.module.scss";
-
-import AboutUs from "./components/about-us/aboutUs";
 import ContactUs from "./components/contact-us";
-import PhotoCarusel from "./components/photo-carusel";
-import Gallery from "./components/gallery";
 import Partners from "./components/partners";
 import Event from "./components/event";
 import Directions from "./components/directions";
 import OurWork from "./components/our-work";
+import cls from "./main.module.scss";
 
 interface MainProps {}
 

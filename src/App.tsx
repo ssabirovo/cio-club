@@ -1,9 +1,7 @@
 import "./assets/base.scss";
 import { Route, Routes } from "react-router-dom";
-import { Context } from "./context";
 import Main from "./pages/main";
 import { useState, Suspense } from "react";
-import About from "./pages/About";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
