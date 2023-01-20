@@ -9,7 +9,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ title, onClick, className }) => (
-  <div onClick={onClick} className={cx(cls.wrapper, cls[`${className}`])}>
+  <div onClick={onClick} className={cx(cls.wrapper, className)}>
     {title}
   </div>
 );

@@ -32,8 +32,8 @@ const MyAccount: React.FC<MyAccountProps> = () => {
           <h1 className={cls.title}>Tadbirlar</h1>
           <p className={cls.description}>Men qatnashmoqchi bo’gan tadbirlar</p>
           <div className={cls.container}>
-            <Card />
-            <Card />
+            <Card title="Ibrat event" onClick={() => console.log("hello")} />
+            <Card title="Teda event" onClick={() => console.log("hello")} />
           </div>
         </div>
       </div>

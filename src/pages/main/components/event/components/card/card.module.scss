@@ -6,6 +6,12 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
+  cursor: pointer;
+  transition: 0.2s linear;
+
+  &:hover {
+    background: #eeeeee;
+  }
   .card-top {
     display: flex;
 

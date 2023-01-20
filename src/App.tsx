@@ -10,6 +10,7 @@ import "react-toastify/dist/ReactToastify.css";
 import MyAccount from "./pages/my-account";
 import MyOrders from "./pages/my-orders";
 import AllEvent from "./pages/all-event";
+import AboutEvent from "./pages/about-event";
 
 function App() {
   const [state] = useState({
@@ -19,15 +20,13 @@ function App() {
 
   return (
     <Suspense fallback={null}>
-      <Context.Provider value={state}>
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/about/:type" element={<About />} />
-          <Route path="/personal" element={<MyAccount />} />
-          <Route path="/events" element={<AllEvent />} />
-          <Route path="/orders" element={<MyOrders />} />
-        </Routes>
-      </Context.Provider>{" "}
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/personal" element={<MyAccount />} />
+        <Route path="/events" element={<AllEvent />} />
+        <Route path="/orders" element={<MyOrders />} />
+        <Route path="/about-event/:type" element={<AboutEvent />} />
+      </Routes>
       <ToastContainer />
     </Suspense>
   );

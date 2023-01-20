@@ -1,0 +1,84 @@
+.wrapper {
+  background: url("../../assets/images/about-eventBg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  display: grid;
+  place-content: center;
+
+  .container {
+    margin-top: 30px;
+    padding: 29px 30px;
+    width: 689px;
+    background: #f9f9f9;
+    border: 1px solid #dddddd;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+
+    .title {
+      text-transform: capitalize;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 35px;
+      line-height: 55px;
+
+      color: #3548d4;
+      margin-bottom: 40px;
+    }
+
+    .subtitle {
+      font-family: "Gordita";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 24px;
+
+      color: #3548d4;
+    }
+
+    .description {
+      font-family: "Gordita";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.05em;
+
+      color: #5a5a5a;
+    }
+
+    .map {
+      margin: 30px 0;
+      border: 1px solid #3548d4;
+      border-radius: 4px;
+      border: none;
+      width: 100%;
+    }
+  }
+
+  .butt {
+  }
+
+  .success {
+    background: #4fb91d;
+    border-radius: 4px;
+    font-family: "Gordita";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 23px;
+    margin-bottom: 26px;
+
+    color: #ffffff;
+  }
+}
