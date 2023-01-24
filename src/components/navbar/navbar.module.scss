@@ -154,7 +154,7 @@
       display: flex;
       align-items: center;
       gap: 11px;
-      p {
+      a {
         font-family: "Segoe UI";
         font-style: normal;
         font-weight: 400;
@@ -162,6 +162,7 @@
         line-height: 21px;
         display: flex;
         align-items: center;
+        text-decoration: none;
 
         color: var(--white);
       }

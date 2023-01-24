@@ -23,6 +23,7 @@ const Event: React.FC<EventProps> = () => {
       <div className={cls.tablist}>
         {tablists.map(({ idx, key }) => (
           <div
+            key={key}
             className={cx(cls["tab-head"], index === idx ? cls.active : null)}
             onClick={() => {
               setIndex(idx);

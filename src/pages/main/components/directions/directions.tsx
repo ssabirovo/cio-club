@@ -32,8 +32,8 @@ const Directions: React.FC<DirectionsProps> = () => (
     <h2 className={cls.title}>Yo'nalishlar</h2>
 
     <div className={cls.directions}>
-      {directionsData.map(({ icon, title }) => (
-        <div className={cls.direction}>
+      {directionsData.map(({ icon, title }, idx) => (
+        <div key={idx} className={cls.direction}>
           <Icons size={30} name="cosmetology" color="var(--primary)" />
           <p className={cls.description}>{title}</p>
         </div>

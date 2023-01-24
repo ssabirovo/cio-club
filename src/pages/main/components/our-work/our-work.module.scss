@@ -8,6 +8,7 @@
   text-align: center;
 
   color: #3548d4;
+  margin-bottom: 23px;
 }
 
 .gallery {
@@ -90,4 +91,22 @@
   transform: scale(1);
   opacity: 1;
   visibility: visible;
+}
+
+.container {
+  transition: 0.5s all linear;
+  height: 600px;
+  overflow: hidden;
+}
+
+.opentoggle {
+  height: auto;
+  transition: 1s all linear;
+}
+
+.btn-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 }

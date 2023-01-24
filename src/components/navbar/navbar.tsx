@@ -83,13 +83,13 @@ const Navbar: React.FC<NavbarProps> = () => {
             <div className={cls.phones}>
               <Icon color="var(--white)" name="phone" />
               <div className={cls.box}>
-                <p>90-378-06-56</p>
-                <p>94-442-98-89</p>
+                <a href="tel:+998903780656">90-378-06-56</a>
+                <a href="tel:+998944429889">94-442-98-89</a>
               </div>
             </div>
             <div className={cls.telegram}>
               <Icon color="var(--white)" name="telegram" />
-              <p>@ibrat.club.uz</p>
+              <a href="#1">@ibrat.club.uz</a>
             </div>
           </div>
 

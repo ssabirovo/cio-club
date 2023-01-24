@@ -55,6 +55,7 @@ const PhotoCarousel: React.FC<CarouselProps> = () => {
       keyframes={customAnimationInput}
     >
       <section id="carousel" className={cls.wrapper}>
+        <h2 className={cls.title}>Spikerlar</h2>
         <div className="carousel-wrapper">
           <Slider {...settings}>
             {Photos.map((item, idx: number) => (

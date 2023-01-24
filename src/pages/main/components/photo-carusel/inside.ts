@@ -1,6 +1,6 @@
 export const Photos: string[] = [
-  "https://files.fm/thumb_show.php?i=9cqxqvx24",
-  "https://files.fm/thumb_show.php?i=sxt23rrjg",
-  "https://files.fm/thumb_show.php?i=ta6kqafft",
-  "https://files.fm/thumb_show.php?i=3jxjjf4ze",
+  "https://tfi.uz/photos/14/AA%20news%20-%202022/AD%20AFKIR/7.jpg",
+  "https://tsuos.uz/wp-content/uploads/2022/04/IMG_3030-1024x683.jpg",
+  "https://tfi.uz/photos/14/AA%20news%20-%202022/AD%20AFKIR/7.jpg",
+  "https://tsuos.uz/wp-content/uploads/2022/04/IMG_3030-1024x683.jpg",
 ];

@@ -5,13 +5,15 @@ import cls from "./card.module.scss";
 
 interface CardProps {
   statusColor?: string;
+  title: string;
+  onClick: (e?: React.MouseEvent<HTMLDivElement>) => void;
 }
 
-const Card: React.FC<CardProps> = ({ statusColor }) => (
-  <div className={cls.card}>
+const Card: React.FC<CardProps> = ({ statusColor, onClick, title }) => (
+  <div onClick={() => onClick()} className={cls.card}>
     <div className={cls["card-top"]}>
       <div className={cls.info}>
-        <h3>ICT Week</h3>
+        <h3>{title}</h3>
         <p>Iqtsodiyot vazirligi</p>
       </div>
       <div style={{ background: statusColor }} className={cls.status}></div>

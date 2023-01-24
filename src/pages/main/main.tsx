@@ -6,10 +6,23 @@ import Event from "./components/event";
 import Directions from "./components/directions";
 import OurWork from "./components/our-work";
 import cls from "./main.module.scss";
+import PhotoCarusel from "./components/photo-carusel";
+import { useNavigate } from "react-router-dom";
 
 interface MainProps {}
 
 const Main: React.FC<MainProps> = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = (hash: string) => {
+    let navig = new Promise((res, rej) => {
+      navigate("/");
+      res("succses");
+    });
+    navig.then(() => {
+      document.location.hash = hash;
+    });
+  };
   return (
     <div id="home">
       <Navbar />
@@ -21,21 +34,25 @@ const Main: React.FC<MainProps> = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
             non!
           </p>
-          <button className={cls.btn}>Bog’lanish !</button>
+          <button
+            className={cls.btn}
+            onClick={() => handleNavigate("#contact")}
+          >
+            Bog’lanish !
+          </button>
         </div>
       </section>
 
       <Event />
       <Directions />
-      {/* <PhotoCarusel /> */}
+
+      <PhotoCarusel />
 
       <OurWork />
 
       <Partners />
 
       <ContactUs />
-
-      {/* <Footer /> */}
     </div>
   );
 };

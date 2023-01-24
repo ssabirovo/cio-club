@@ -11,7 +11,7 @@ interface MediaLinksProps {
 
 export const links: linksProps[] = [
   { address: "#home", content: "navbar.home" },
-  { address: "#about", content: "navbar.about" },
+  { address: "#directions", content: "navbar.directions" },
   { address: "#gallery", content: "navbar.gallery" },
   { address: "#contact", content: "navbar.contact" },
 ];

@@ -3,6 +3,8 @@ import cls from "./all-event.module.scss";
 import cx from "classnames";
 import Card from "./components/card/card";
 import Navbar from "../../components/navbar";
+import { paths } from "./inside";
+import { useNavigate } from "react-router-dom";
 
 interface AllEventProps {}
 
@@ -12,6 +14,7 @@ const tablists = [
 ];
 
 const AllEvent: React.FC<AllEventProps> = () => {
+  const navigate = useNavigate();
   const [index, setIndex] = useState(1);
   return (
     <section className={cls.events}>
@@ -32,28 +35,25 @@ const AllEvent: React.FC<AllEventProps> = () => {
       </div>
       <div className={cls["tab-content"]} hidden={index !== 0}>
         <div className={cls.container}>
-          <Card statusColor="#CBCBCB" />
-          <Card statusColor="#CBCBCB" />
-          <Card statusColor="#CBCBCB" />
-          <Card statusColor="#CBCBCB" />
-          <Card statusColor="#CBCBCB" />
-          <Card statusColor="#CBCBCB" />
-          <Card statusColor="#CBCBCB" />
-          <Card statusColor="#CBCBCB" />
-          <Card statusColor="#CBCBCB" />
+          {paths.map((path, idx) => (
+            <Card
+              title={path}
+              key={idx}
+              onClick={() => navigate(`/about-event/${path}`)}
+            />
+          ))}
         </div>
+        
       </div>
       <div className={cls["tab-content"]} hidden={index !== 1}>
         <div className={cls.container}>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {paths.map((path, idx) => (
+            <Card
+              title={path}
+              key={idx}
+              onClick={() => navigate(`/about-event/${path}`)}
+            />
+          ))}
         </div>
       </div>
     </section>
