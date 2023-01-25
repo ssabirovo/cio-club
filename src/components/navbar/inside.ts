@@ -11,17 +11,16 @@ interface MediaLinksProps {
 
 export const links: linksProps[] = [
   { address: "#home", content: "navbar.home" },
-  { address: "#about", content: "navbar.about" },
-  { address: "#gallery", content: "navbar.gallery" },
+  { address: "#events", content: "events.title" },
+  { address: "#directions", content: "navbar.directions" },
   { address: "#contact", content: "navbar.contact" },
 ];
 
 export const MediaLinks: MediaLinksProps[] = [
-  { address: "https://www.instagram.com/teda.uz", iconName: "instagram" },
-  { address: "https://t.me/tedauz_bot", iconName: "telegram" },
+  { address: "https://t.me/Ibrat", iconName: "telegram" },
   {
     address:
-      "https://mail.google.com/mail/u/0/#search/tedacompanyinfo%40gmail.com?compose=new",
+      "https://mail.google.com/mail/u/0/#search/ibratclub%40gmail.com?compose=new",
     iconName: "mail",
   },
 ];

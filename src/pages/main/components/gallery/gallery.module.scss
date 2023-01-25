@@ -7,13 +7,14 @@
     }
   }
   .title {
-    font-weight: 700;
+    font-family: "Okta Neue";
+    font-weight: 400;
     font-size: 49px;
     line-height: 49px;
     text-align: center;
     color: var(--primary);
-    @media (max-width: 460px) {
-      font-size: 30px;
+    @media (max-width: 690px) {
+      font-size: 37px;
     }
   }
 

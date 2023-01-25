@@ -5,10 +5,24 @@
     padding-top: 24px;
     padding-bottom: 0;
   }
+
+  .title {
+    font-family: "Okta Neue";
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 89px;
+    text-align: center;
+    margin-bottom: 23px;
+    color: #3548d4;
+    @media (max-width: 690px) {
+      font-size: 37px;
+    }
+  }
   :global {
     .slick-next:before,
     .slick-prev:before {
-      color: var(--link-text);
+      color: #3548d4;
+      border-radius: 66px;
       font-size: 30px;
       border-radius: 66px;
     }

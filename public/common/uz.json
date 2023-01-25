@@ -1,7 +1,25 @@
 {
-  "direction": { "title": "Yo'nalishlar" },
+  "buttons": {
+    "more": "Yana",
+    "contact": "Bog'lanish"
+  },
+  "events": {
+    "title": "Tadbirlar",
+    "old": "Oldingi",
+    "new": "Hozirgi"
+  },
+  "speakers": "Spikerlar",
+
+  "directions": {
+    "title": "Yo'nalishlar",
+    "child1": "Tadbirlar tashkillashtirish",
+    "child2": "Kosmetalogiya markazi",
+    "child3": "Psihologiya markazi",
+    "child4": "Notiqlik markazi",
+    "child5": "Tikuvchilik sexi"
+  },
   "gallery": {
-    "title": "Bizning ishlar",
+    "title": "Galereya",
     "seeMoreBtn": "Yana",
     "closeBtn": "Yopish"
   },
@@ -11,83 +29,14 @@
     "about": "Biz Haqimizda",
     "gallery": "Bizning ishlar",
     "contact": "Kontaktlar",
-    "btnApply": "Bog'lanish"
+    "btnApply": "Bog'lanish",
+    "directions": "Yo'nalishlar"
   },
   "aboutUs": {
     "title": "Biz Haqimizda",
     "subTitle": "IT-autsorsing kompaniya",
     "description": "'Texno Dargoh' - Toshkentdagi kompaniya bo'lib, mijozlarga uzoq muddatli biznesni qo'llab-quvvatlaydi: IT-konsalting, brending texnologiyalari, dizayn echimlari, Internet-loyihalarni ishlab chiqish va ularga xizmat ko'rsatish, Internet-marketing, veb-saytlarni loyihalash va ishlab chiqish, shuningdek ularni qo'llab-quvvatlash va rivojlantirish.",
     "applyBtn": "Bog'lanish"
-  },
-  "aboutData": {
-    "telegramBot": {
-      "title": "Telegram Bot",
-      "subtitle": "Telegram Bot nima ?",
-      "content": {
-        "p1": "Telegram boti aqlli muloqotga foydali qo'shimcha bo'lib, ayniqsa professional sohalarda. Eng mashhur xabar almashish xizmatlari bilan solishtirganda, Telegram maqolamizda keltirilgan botning maxsus so'rovlari va harakatlari bilan ma'lumot almashishda qo'shimcha afzalliklarni taqdim etadi.",
-        "p2": "Biroq, barcha dasturlar singari, Telegram keng foydalanish uchun odatda aniq dasturlash bilimlarini talab qiladi. Ayniqsa, sanoat va mashina ulanishida foydalanish uchun OPC Router bu murakkab dasturlashni juda soddalashtiradigan tavsiya etilgan vositadir."
-      }
-    },
-    "threeDesign": {
-      "title": "3D Dizayn",
-      "subtitle": "3D dizayn nima va 3D modellarni yaratish uchun qanday dasturiy ta'minot ishlatiladi?",
-      "content": {
-        "p1": "3D dizayn - bu uch o'lchovli ob'ekt yoki shaklning matematik tasvirini yaratish uchun dasturiy ta'minotdan foydalanish jarayoni. Yaratilgan ob'ekt 3D model deb ataladi va bu 3 o'lchovli modellar kompyuterda yaratilgan (CG) dizayn uchun ishlatiladi. 3D dizayn san'atkorlarga o'z fikrlarini shakllantirish, muloqot qilish, hujjatlashtirish, tahlil qilish va baham ko'rishda yordam berish uchun turli sohalarda qo'llaniladi.",
-        "p2": "3D dizayn turlari. Bular ishlab chiqarish, arxitektura, qurilish, qurilish, ommaviy axborot vositalari va ko'ngilochar sohalarda qo'llaniladigan 3D dizayn usullarining bir nechtasi."
-      }
-    },
-    "crm": {
-      "title": "CRM",
-      "subtitle": "CRM nima?",
-      "content": {
-        "p1": "CRM-tizimlarini ishlab chiqish aniq maqsadlar va biznesning aniq talablariga moslashtirilgan. Dasturiy ta'minotni ishlab chiqish muddati loyihaning individual xususiyatlariga bog'liq. CRMni rivojlantirishda bizning ishtirokimiz bilan aniq va shaffof boshqaruv, ichki izchillik, barqaror o'zaro hamkorlik va mijozlarning sodiqligini shakllantirishga erishiladi.",
-        "p2": "CRM nima uchun kerak?",
-        "p3": "1. Agar mijozlarga qo'lda xizmat ko'rsatishga vaqtingiz bo'lmasa, savdoni tizimlashtirish va boshqarish. 2. Har bir xaridor bilan “dan vagacha” munosabatlar tarixini yuritish. 3. Menejerlar va bo'limlarning samaradorligini monitoring qilish: ular qancha ish olib boradi va mijozlar bilan qanday munosabatda bo'ladi. 4. Ma'lumot yig'ish: kompaniya odatda qaysi bosqichda mijozlarini yo'qotadi va qancha potentsial mijozlar xaridorga aylanmadi. 5. Mijozlar bilan ishlash jarayonlarining tez va to'liq tahlilini olish. 6. Mijozlar bilan ishlash va jarayonlarni optimallashtirishdagi kamchiliklarni bartaraf etish orqali savdo hajmini oshirish."
-      }
-    },
-    "mobile": {
-      "title": "Mobile",
-      "subtitle": "Mobil ilova nima ?",
-      "content": {
-        "p1": "Mobil ilova yoki ilova - bu telefon, planshet yoki soat kabi mobil qurilmada ishlash uchun mo'ljallangan kompyuter dasturi yoki dasturiy ta'minot ilovasi. Mobil ilovalar ko'pincha ish stoli kompyuterlarida ishlashga mo'ljallangan ish stoli ilovalari va to'g'ridan-to'g'ri mobil qurilmada emas, balki mobil veb-brauzerlarda ishlaydigan veb-ilovalardan farq qiladi.",
-        "p2": "Ilovalar dastlab elektron pochta, taqvim va kontakt ma'lumotlar bazalari kabi samaradorlikni oshirish uchun mo'ljallangan edi, ammo ilovalarga bo'lgan talab mobil o'yinlar, zavod avtomatizatsiyasi, GPS va joylashuvga asoslangan xizmatlar, buyurtmalarni kuzatish va chiptalar kabi boshqa sohalarda tez kengayishiga olib keldi. xaridlar, shuning uchun endi millionlab ilovalar mavjud. Ko'pgina ilovalar Internetga kirishni talab qiladi. Ilovalar odatda raqamli tarqatish platformalarining bir turi bo'lgan ilovalar do'konlaridan yuklab olinadi.",
-        "p3": "Ilovalar uch turga bo'linadi: mahalliy ilovalar, gibrid va veb-ilovalar. Mahalliy ilovalar mobil operatsion tizim, odatda iOS yoki Android uchun maxsus ishlab chiqilgan. Veb-ilovalar HTML5 yoki CSS-da yozilgan va odatda brauzer orqali ishlaydi. Gibrid ilovalar JavaScript, CSS va HTML5 kabi veb-texnologiyalar yordamida yaratilgan va mahalliy konteynerda yashiringan veb-ilovalar kabi ishlaydi."
-      }
-    },
-    "eCommerce": {
-      "title": "E-Commerce",
-      "subtitle": "Elektron tijorat nima ?",
-      "content": {
-        "p1": "Elektron tijorat - bu kompyuter tarmoqlari yordamida amalga oshiriladigan barcha moliyaviy va savdo operatsiyalari va bunday operatsiyalar bilan bog'liq biznes jarayonlarni o'z ichiga olgan raqamli iqtisodiyot sohasi.",
-        "p2": "Elektron tijorat quyidagilarni o'z ichiga oladi:",
-        "p3": "1. B2B — qisqartma «business-to-business» — Sayt orqali ilovalardan foydalangan holda korxonalar o'rtasida savdo. Buyurtmalarni savdo vakillari orqali telefon yoki elektron pochta orqali qabul qilish o'rniga, buyurtmalar raqamli shaklda qabul qilinadi, bu esa qo'shimcha xarajatlarni kamaytiradi.",
-        "p4": "2. B2C — qisqartma «business-to-Consumer —  Chakana savdo tovarlar yoki xizmatlarni bevosita iste'molchilarga yoki oxirgi foydalanuvchilarga sotish faoliyatini anglatadi. Bir qator yurisdiktsiyalarda yoki mintaqalarda chakana savdoning huquqiy ta'riflarida sotuvlarning kamida 80 foizi oxirgi foydalanuvchilar tomonidan amalga oshirilishi kerakligini ta'kidlaydi.",
-        "p5": "3. C2C — qisqartma «Consumer-to-Consumer — Elektron tijoratni amalga oshirishning bu usuli ikki iste'molchi o'rtasidagi operatsiyalarni o'z ichiga oladi, ularning hech biri so'zning huquqiy ma'nosida tadbirkor emas."
-      }
-    },
-    "smm": {
-      "title": "SMM",
-      "subtitle": "Ijtimoiy Media Marketingining nima ?",
-      "content": {
-        "p1": "Ijtimoiy media marketingi (SMM) mahsulot va xizmatlarni sotish, mavjud mijozlar bilan muloqot qilish va yangilarini jalb qilish uchun Facebook, Twitter va Instagram kabi ijtimoiy tarmoqlar va ijtimoiy tarmoqlardan foydalanadi. Ijtimoiy media marketingining kuchi uchta asosiy marketing sohasida ijtimoiy medianing tengsiz imkoniyatlaridan kelib chiqadi: aloqa, o'zaro aloqa va mijozlar ma'lumotlari.",
-        "p2": "Ijtimoiy media marketingi biznesning iste'molchi xatti-harakatlariga ta'sir qilish usullarini o'zgartirdi - faollikni kuchaytiruvchi kontentni targ'ib qilishdan foydalanuvchilar bilan xabar almashish rezonanslashadigan shaxsiy ma'lumotlarni olishgacha. Ijtimoiy tarmoqlar bugungi kunda juda keng tarqalganligi sababli, ushbu platformalardan foydalangan holda marketing usullari biznes uchun juda muhimdir."
-      }
-    },
-    "documentation": {
-      "title": "WEB",
-      "subtitle": "Veb ilova va veb-sahifa",
-      "content": {
-        "p1": "1. Veb-ilova (yoki web-app) - bu veb-brauzer yordamida kirish mumkin bo'lgan amaliy dastur. Veb-ilovalar faol tarmoq ulanishiga ega foydalanuvchilarga World Wide Web orqali yetkaziladi.",
-        "p2": "2. Web-sahifa (yoki wep-page) - veb-brauzer yordamida kirish mumkin bo'lgan World Wide Webning hujjati yoki axborot resursi."
-      }
-    },
-    "registration": {
-      "title": "Registration System",
-      "subtitle": "Ro'yxatga olish tizimi haqida.",
-      "content": {
-        "p1": "Tadbirga tashrif buyuruvchilarni ro‘yxatga olish, QR CODE nishonini berish, hisobotlarni tayyorlash, onlayn ro‘yxatdan o‘tish saytini yuritish, ro‘yxatdan o‘tgan onlayn tashrif buyuruvchilarni oflayn rejimga yuklash va avtomatik chop etish uchun avtomatlashtirilgan dasturiy ta’minot va apparat platformasi."
-      }
-    }
   },
   "contact": {
     "title": "Kontaktlar",

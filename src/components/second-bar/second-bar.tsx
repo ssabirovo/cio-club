@@ -16,9 +16,9 @@ type itemsType = {
 
 const items: itemsType[] = [
   { icon: "personal", link: "/personal", title: "Shaxsiy Ma'lumotlar" },
-  { icon: "order", link: "/orders", title: "Buyurtmalar" },
-  { icon: "company", link: "/companies", title: "Mening korxonalarim" },
-  { icon: "vacancy", link: "/vacancy", title: "Mening vakansiyalarim" },
+  { icon: "order", link: "/orders", title: "Tadbirlar" },
+  // { icon: "company", link: "/companies", title: "Mening korxonalarim" },
+  // { icon: "vacancy", link: "/vacancy", title: "Mening vakansiyalarim" },
   { icon: "logOut", link: "/", title: "Asosiy sahifaga o'tish" },
 ];
 
@@ -82,7 +82,7 @@ const SecondBar: React.FC<SecondBarProps> = () => {
                 cls[`${window.location.pathname === link && "active"}`]
               )}
             >
-              <Icons  name={icon} />
+              <Icons name={icon} />
               {title}
             </div>
           ))}

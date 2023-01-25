@@ -9,23 +9,16 @@ interface iContactInfo {
 export const ContactInfo: iContactInfo[] = [
   {
     name: "location",
-    title: "Elbek 24/1, Tashkent",
-    href: "https://www.google.com/maps/dir//TEXNO+DARGOH,+%D0%93.+%D0%A2%D0%B0%D1%88%D0%BA%D0%B5%D0%BD%D1%82,+%D0%BC%D0%B5%D1%82%D1%80%D0%BE,+%D0%A2%D0%BE%D1%88%D0%BA%D0%B5%D0%BD%D1%82+700000,+O%CA%BBzbekiston/@41.293983,69.326204,18z/data=!4m8!4m7!1m0!1m5!1m1!1s0x38ae8baaaaaaaac1:0x4a00aeebddd9ed18!2m2!1d69.3262043!2d41.293983?hl=uz",
+    title: "Fazilat 4/7, Termiz sh.",
+    href: "https://www.google.com/maps/dir/37.224478,67.2690703/37.223329,67.267815/@37.2232868,67.2666882,421m/data=!3m1!1e3!4m2!4m1!3e0!5m2!1e2!1e4",
   },
-  { name: "phone", title: "90-378-06-56", href: "tel:+998903780656" },
-  {
-    name: "message",
-    title: "ibratclub@gmail.com",
-    href: "https://mail.google.com/mail/u/0/#search/ibratclub%40gmail.com?compose=new",
-  },
+
   {
     name: "telegram",
-    title: "@ibratclub",
-    href: "https://mail.google.com/mail/u/0/#search/ibratclub%40gmail.com?compose=new",
+    title: "@Ibrat",
+    href: "https://t.me/Ibrat",
   },
-  {
-    name: "instagram",
-    title: "@ibratclub",
-    href: "https://mail.google.com/mail/u/0/#search/ibratclub%40gmail.com?compose=new",
-  },
+  { name: "phone", title: "90-378-06-56", href: "tel:+998903780656" },
+  { name: "phone", title: "94-442-98-89", href: "tel:+998944429889" },
+  { name: "phone", title: "93-159-25-58", href: "tel:+998931592558" },
 ];

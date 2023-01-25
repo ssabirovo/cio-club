@@ -1,6 +1,7 @@
 import { keyframes } from "@emotion/react";
 import React from "react";
 import Reveal from "react-awesome-reveal";
+import { useTranslation } from "react-i18next";
 import Slider from "react-slick";
 import { Photos } from "./inside";
 import cls from "./photo-carousel.module.scss";
@@ -8,6 +9,7 @@ import cls from "./photo-carousel.module.scss";
 interface CarouselProps {}
 
 const PhotoCarousel: React.FC<CarouselProps> = () => {
+  const { t } = useTranslation();
   const settings = {
     dots: true,
     infinite: true,
@@ -55,6 +57,7 @@ const PhotoCarousel: React.FC<CarouselProps> = () => {
       keyframes={customAnimationInput}
     >
       <section id="carousel" className={cls.wrapper}>
+        <h2 className={cls.title}>{t("speakers")}</h2>
         <div className="carousel-wrapper">
           <Slider {...settings}>
             {Photos.map((item, idx: number) => (

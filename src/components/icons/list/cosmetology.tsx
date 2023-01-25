@@ -2,8 +2,8 @@ import React from "react";
 
 const Cosmetology: React.FC = () => (
   <svg
-    width="35"
-    height="46"
+  width="40"
+  height="44"
     viewBox="0 0 35 46"
     fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"

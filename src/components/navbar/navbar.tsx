@@ -83,13 +83,15 @@ const Navbar: React.FC<NavbarProps> = () => {
             <div className={cls.phones}>
               <Icon color="var(--white)" name="phone" />
               <div className={cls.box}>
-                <p>90-378-06-56</p>
-                <p>94-442-98-89</p>
+                <a href="tel:+998903780656">90-378-06-56</a>
+                <a href="tel:+998944429889">94-442-98-89</a>
               </div>
             </div>
             <div className={cls.telegram}>
               <Icon color="var(--white)" name="telegram" />
-              <p>@ibrat.club.uz</p>
+              <a href="https://t.me/Ibrat" target={"blank"}>
+                @Ibrat
+              </a>
             </div>
           </div>
 
@@ -116,7 +118,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           }}
           className={cls.ham}
         >
-          <Icons name="hamburger" size={30} color="var(--primary)" />
+          <Icons name="hamburger" size={30} color="var(--white)" />
         </div>
       </section>
 
@@ -124,17 +126,6 @@ const Navbar: React.FC<NavbarProps> = () => {
 
       <div ref={hamRef} className={cls.hamburger}>
         <div className={cls.xmark}>
-          {isUser ? (
-            <ImgCircle close={setUser} mobile={true} />
-          ) : (
-            <Button
-              onClick={() => {
-                setActive(true);
-                hamRef.current?.classList.toggle(cls["t-none"]);
-              }}
-              title={"Login"}
-            />
-          )}
           <Icons onClick={() => toggleHam()} name="xMark" size={30} />
         </div>
 

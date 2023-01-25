@@ -1,0 +1,77 @@
+.events {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 759px;
+
+  .title {
+    font-family: "Okta Neue";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 57px;
+    line-height: 89px;
+    color: var(--primary);
+    margin: 10px 0 10px;
+    @media (max-width: 690px) {
+      font-size: 37px;
+    }
+  }
+
+  .tablist {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    margin-bottom: 68px;
+    @media (max-width: 690px) {
+      gap: 15px;
+    }
+    .tab-head {
+      font-family: "Gordita";
+      font-size: 26px;
+      line-height: 35px;
+      text-align: center;
+      color: var(--secondary-text);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 17px 59px;
+      cursor: pointer;
+      @media (max-width: 690px) {
+        padding: 8px 29px;
+        font-size: 16px;
+      }
+    }
+
+    .active {
+      border: 1px solid var(--primary);
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 10px;
+        background: var(--primary);
+      }
+    }
+  }
+
+  .tab-content {
+    .container {
+      display: grid;
+      align-items: center;
+      gap: 59px 50px;
+      grid-template-columns: 1fr 1fr 1fr;
+      @media (max-width: 718px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+      }
+      @media (max-width: 510px) {
+        grid-template-columns: 1fr;
+      }
+    }
+    margin-bottom: 60px;
+  }
+}

@@ -14,13 +14,22 @@
     .title {
       font-family: "Okta Neue";
       font-style: normal;
-      font-weight: 400;
+      font-weight: 900;
       font-size: 80px;
       line-height: 125px;
       display: flex;
       align-items: center;
-
       color: var(--secondary);
+      padding-bottom: 20px;
+      @media (max-width: 690px) {
+        font-size: 50px;
+        line-height: 70px;
+      }
+      @media (max-width: 460px) {
+        font-size: 30px;
+        line-height: 50px;
+
+      }
     }
 
     .paragraph {
@@ -52,6 +61,7 @@
       color: var(--black);
       padding: 15px 40px;
       border: none;
+      cursor: pointer;
     }
   }
 }
