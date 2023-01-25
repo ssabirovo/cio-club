@@ -11,14 +11,15 @@
   }
 
   .title {
+    font-family: "Okta Neue";
     font-weight: 700;
     font-size: 49px;
     line-height: 49px;
     color: var(--primary);
     margin-bottom: 50px;
     text-align: center;
-    @media (max-width: 460px) {
-      font-size: 30px;
+    @media (max-width: 690px) {
+      font-size: 37px;
     }
   }
 
@@ -34,7 +35,9 @@
       border: 1px solid #dddddd;
       border-radius: 8px;
       padding: 26px 69px 48px;
-
+      @media (max-width: 690px) {
+        padding: 26px;
+      }
       .submit-btn {
         padding: 12px 42px;
         background: var(--primary);
@@ -96,8 +99,6 @@
     line-height: 23px;
     width: 100%;
     overflow: hidden;
-    margin-bottom: 20px;
-
     color: var(--link-text);
     p {
       padding: 0 10px 0 15px;
@@ -138,6 +139,9 @@
     border: 1px solid #dddddd;
     border-radius: 8px;
     padding: 26px 69px 48px;
+    @media (max-width: 690px) {
+      padding: 26px;
+    }
   }
 
   .info-container {

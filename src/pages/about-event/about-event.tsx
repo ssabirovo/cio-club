@@ -22,9 +22,9 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
     <div className={cls.about}>
       <Navbar blackBg={true} />
       <div className={cls.wrapper}>
+        <div className={cls.hiddenNavbar}>af</div>
         <div className={cls.container}>
           <h2 className={cls.title}>{data[`${type}`].title}</h2>
-
           <h3 className={cls.subtitle}>Tashkilotchi</h3>
           <p className={cls.description}>
             Samarqand вилояти термиз шахар йошлар ишлар агентлиги маркази
@@ -39,19 +39,16 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
             veb-saytlarni loyihalash va ishlab chiqish, shuningdek ularni
             qo'llab-quvvatlash va rivojlantirish.
           </p>
-
           <br />
           <br />
           <h3 className={cls.subtitle}>Sana</h3>
           <p className={cls.description}>11.02.2022 - 17.02.2022</p>
-
           <br />
           <br />
           <h3 className={cls.subtitle}>Manzil</h3>
           <p className={cls.description}>
             Toshkent viloyati, UsmonNosir koch. 15-uy
           </p>
-
           <div>
             <iframe
               className={cls.map}
@@ -60,7 +57,6 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
-
           {!subscribe ? (
             <Button
               onClick={() => setSubscribe(true)}
@@ -72,13 +68,10 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
               <div className={cls.success}>
                 Siz bu tadbirga yozilgansiz <Icons size={22} name="Ticked" />
               </div>
-
               <h3 className={cls.subtitle}>Murojaat vaqti</h3>
               <p className={cls.description}>{date}</p>
-
               <br />
               <br />
-
               <h3 className={cls.subtitle}>Qatnashilgan sana</h3>
               <p className={cls.description}>23.02.2022</p>
             </>

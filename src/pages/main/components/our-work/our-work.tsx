@@ -4,6 +4,7 @@ import cls from "./our-work.module.scss";
 import Icon from "../../../../components/icons/icons";
 import { data } from "./inside";
 import Button from "../../../../components/button/button";
+import { useTranslation } from "react-i18next";
 
 interface OurWorkProps {}
 
@@ -11,13 +12,14 @@ const OurWork: React.FC<OurWorkProps> = () => {
   const [model, setModel] = useState(false);
   const [tempImg, setTempImg] = useState("");
   const [toggle, setToggle] = useState(false);
+  const { t } = useTranslation();
   const getItem = (item: string) => {
     setTempImg(item);
     setModel(true);
   };
   return (
     <section id="gallery" className={cls.wrapper}>
-      <h2 className={cls.title}>Our Works</h2>
+      <h2 className={cls.title}>{t("gallery.title")}</h2>
       <div className={cx(cls.model, model && cls.open)}>
         <img src={tempImg} alt="" />
         <div className={cls.icon}>
@@ -50,7 +52,7 @@ const OurWork: React.FC<OurWorkProps> = () => {
       <div className={cls["btn-wrapper"]}>
         <Button
           onClick={() => setToggle(!toggle)}
-          title={toggle ? "Close" : "See more"}
+          title={toggle ? t("gallery.closeBtn") : t("gallery.seeMoreBtn")}
         />
       </div>
     </section>

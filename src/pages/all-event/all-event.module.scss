@@ -11,7 +11,10 @@
     font-size: 57px;
     line-height: 89px;
     color: var(--primary);
-    margin: 70px 0 10px;
+    margin: 10px 0 10px;
+    @media (max-width: 690px) {
+      font-size: 37px;
+    }
   }
 
   .tablist {
@@ -19,20 +22,23 @@
     align-items: center;
     gap: 28px;
     margin-bottom: 68px;
-
+    @media (max-width: 690px) {
+      gap: 15px;
+    }
     .tab-head {
-      font-family: "Segoe UI";
-      font-style: normal;
-      font-weight: 400;
+      font-family: "Gordita";
       font-size: 26px;
       line-height: 35px;
       text-align: center;
-
       color: var(--secondary-text);
       border: 1px solid var(--border-color);
       border-radius: 8px;
       padding: 17px 59px;
       cursor: pointer;
+      @media (max-width: 690px) {
+        padding: 8px 29px;
+        font-size: 16px;
+      }
     }
 
     .active {

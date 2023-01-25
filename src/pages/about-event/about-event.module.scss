@@ -14,6 +14,10 @@
   display: grid;
   place-content: center;
 
+  .hiddenNavbar {
+    height: 75.65px;
+  }
+
   .container {
     margin-top: 30px;
     padding: 29px 30px;
@@ -22,6 +26,14 @@
     border: 1px solid #dddddd;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    @media (max-width: 780px) {
+      width: auto;
+      margin: 40px;
+    }
+    @media (max-width: 480px) {
+      width: auto;
+      margin: 20px;
+    }
 
     .title {
       text-transform: capitalize;
@@ -29,7 +41,6 @@
       font-weight: 400;
       font-size: 35px;
       line-height: 55px;
-
       color: #3548d4;
       margin-bottom: 40px;
     }
@@ -40,8 +51,10 @@
       font-weight: 500;
       font-size: 22px;
       line-height: 24px;
-
       color: #3548d4;
+      @media (max-width: 480px) {
+        font-size: 20px;
+      }
     }
 
     .description {
@@ -53,8 +66,10 @@
       display: flex;
       align-items: center;
       letter-spacing: 0.05em;
-
       color: #5a5a5a;
+      @media (max-width: 480px) {
+        font-size: 16px;
+      }
     }
 
     .map {
@@ -64,9 +79,6 @@
       border: none;
       width: 100%;
     }
-  }
-
-  .butt {
   }
 
   .success {

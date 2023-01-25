@@ -5,21 +5,23 @@ import Card from "./components/card/card";
 import Button from "../../../../components/button/button";
 import { useNavigate } from "react-router-dom";
 import { paths } from "./inside";
+import { useTranslation } from "react-i18next";
 
 interface EventProps {}
 
 const tablists = [
-  { idx: 0, key: "Oldingi" },
-  { idx: 1, key: "Hozirgi" },
+  { idx: 0, key: "events.old" },
+  { idx: 1, key: "events.new" },
 ];
 
 const Event: React.FC<EventProps> = () => {
   const navigate = useNavigate();
   const [index, setIndex] = useState(1);
+  const { t } = useTranslation();
 
   return (
-    <section className={cls.events}>
-      <h2 className={cls.title}>Tadbirlar</h2>
+    <section id="events" className={cls.events}>
+      <h2 className={cls.title}>{t("events.title")}</h2>
       <div className={cls.tablist}>
         {tablists.map(({ idx, key }) => (
           <div
@@ -30,7 +32,7 @@ const Event: React.FC<EventProps> = () => {
               console.log(index);
             }}
           >
-            {key}
+            {t(key)}
           </div>
         ))}
       </div>
@@ -60,7 +62,7 @@ const Event: React.FC<EventProps> = () => {
       <Button
         onClick={() => navigate("/events")}
         className="button"
-        title="Yana"
+        title={t("buttons.more")}
       />
     </section>
   );

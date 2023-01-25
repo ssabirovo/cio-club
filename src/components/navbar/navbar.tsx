@@ -94,7 +94,9 @@ const Navbar: React.FC<NavbarProps> = ({ blackBg }) => {
             </div>
             <div className={cls.telegram}>
               <Icon color="var(--white)" name="telegram" />
-              <a href="#1">@ibrat.club.uz</a>
+              <a href="https://t.me/Ibrat" target={"blank"}>
+                @Ibrat
+              </a>
             </div>
           </div>
 
@@ -121,7 +123,7 @@ const Navbar: React.FC<NavbarProps> = ({ blackBg }) => {
           }}
           className={cls.ham}
         >
-          <Icons name="hamburger" size={30} color="var(--primary)" />
+          <Icons name="hamburger" size={30} color="var(--white)" />
         </div>
       </section>
 
@@ -129,17 +131,6 @@ const Navbar: React.FC<NavbarProps> = ({ blackBg }) => {
 
       <div ref={hamRef} className={cls.hamburger}>
         <div className={cls.xmark}>
-          {isUser ? (
-            <ImgCircle close={setUser} mobile={true} />
-          ) : (
-            <Button
-              onClick={() => {
-                setActive(true);
-                hamRef.current?.classList.toggle(cls["t-none"]);
-              }}
-              title={"Login"}
-            />
-          )}
           <Icons onClick={() => toggleHam()} name="xMark" size={30} />
         </div>
 

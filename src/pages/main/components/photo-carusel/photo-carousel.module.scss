@@ -7,13 +7,16 @@
   }
 
   .title {
+    font-family: "Okta Neue";
     font-weight: 400;
     font-size: 57px;
     line-height: 89px;
     text-align: center;
     margin-bottom: 23px;
-
     color: #3548d4;
+    @media (max-width: 690px) {
+      font-size: 37px;
+    }
   }
   :global {
     .slick-next:before,

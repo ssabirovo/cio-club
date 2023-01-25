@@ -1,4 +1,7 @@
 export { default as hamburger } from "./hamburger";
+export { default as brain } from "./brain";
+export { default as needle } from "./needle";
+export { default as speaking } from "./speaking";
 export { default as Person } from "./person";
 export { default as Case } from "./case";
 export { default as Ticked } from "./ticked";

@@ -2,13 +2,16 @@
 }
 
 .title {
+  font-family: "Okta Neue";
   font-weight: 400;
   font-size: 57px;
   line-height: 89px;
   text-align: center;
-
   color: #3548d4;
   margin-bottom: 23px;
+  @media (max-width: 690px) {
+    font-size: 37px;
+  }
 }
 
 .gallery {

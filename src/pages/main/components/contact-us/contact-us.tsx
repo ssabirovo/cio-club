@@ -268,10 +268,11 @@ const ContactUs: React.FC<ContactUsProps> = () => {
           <p>
             <iframe
               className={cls.map}
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d713.8555574636114!2d69.3255393849019!3d41.29375551902539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8baaaaaaaac1%3A0x4a00aeebddd9ed18!2sTEXNO%20DARGOH!5e0!3m2!1suz!2s!4v1668419984766!5m2!1suz!2s"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3177.027210219557!2d67.26562631530192!3d37.223328979863616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x22a5d583c08738c6!2zMzfCsDEzJzI0LjAiTiA2N8KwMTYnMDQuMSJF!5e0!3m2!1sru!2s!4v1674654274417!5m2!1sru!2s"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
+            
           </p>
         </Zoom>
       </div>
