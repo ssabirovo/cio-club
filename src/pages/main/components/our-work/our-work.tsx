@@ -32,14 +32,16 @@ const OurWork: React.FC<OurWorkProps> = () => {
       </div>
       <div className={cx(cls.container, toggle && cls.opentoggle)}>
         <div className={cls.gallery}>
-          {data.map((item, idx) => {
+          {data.map(({ id, imgSrc, videoScr }, idx) => {
             return (
-              <div
-                className={cls.pics}
-                key={idx}
-                onClick={() => getItem(item.imgSrc)}
-              >
-                <img src={item.imgSrc} alt="" />
+              <div className={cls.pics} key={idx}>
+                {videoScr ? (
+                  <video controls muted>
+                    <source src={videoScr} type="video/mp4"></source>
+                  </video>
+                ) : (
+                  <img onClick={() => getItem(imgSrc!)} src={imgSrc} alt="" />
+                )}
               </div>
             );
           })}

@@ -40,7 +40,11 @@
 
     .slick-track {
       display: flex;
-      gap: 15px;
+      align-items: center;
+      gap: 10px;
+      img {
+        height: 100%;
+      }
     }
   }
 

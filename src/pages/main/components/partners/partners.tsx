@@ -13,7 +13,7 @@ const Partners: React.FC<PartnersProps> = () => {
   const settings = {
     infinite: true,
     speed: 1000,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1500,

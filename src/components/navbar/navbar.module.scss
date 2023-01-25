@@ -28,7 +28,7 @@
   .hamLinks {
     display: flex;
     gap: 2rem;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
   }
@@ -78,14 +78,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background: url(../../assets/svg/glass.svg),
-  //   radial-gradient(
-  //     90.16% 143.01% at 15.32% 21.04%,
-  //     rgba(69, 70, 85, 0.07) 0%,
-  //     rgba(98, 98, 99, 0.07) 77.08%,
-  //     rgba(142, 155, 167, 0) 100%
-  //   );
-  background-color: rgb(18, 18, 18);
+  background: url(../../assets/svg/glass.svg),
+    radial-gradient(
+      90.16% 143.01% at 15.32% 21.04%,
+      rgba(69, 70, 85, 0.07) 0%,
+      rgba(98, 98, 99, 0.07) 77.08%,
+      rgba(142, 155, 167, 0) 100%
+    );
   background-blend-mode: overlay, normal;
   backdrop-filter: blur(40px);
   padding-top: 0;
@@ -111,7 +110,7 @@
   .links {
     width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
 
@@ -140,9 +139,9 @@
   .corner {
     width: 40%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    gap: 0.9rem;
+    gap: 20px;
 
     .contacts {
       display: flex;

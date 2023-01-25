@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../../components/navbar";
 import { eventData } from "./inside";
-import cls from "./about-event.module.scss";
 import Button from "../../components/button/button";
 import Icons from "../../components/icons";
+import cls from "./about-event.module.scss";
 
 interface AboutEventProps {}
 
@@ -19,8 +19,8 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
   let date =
     today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
   return (
-    <>
-      {/* <Navbar /> */}
+    <div className={cls.about}>
+      <Navbar blackBg={true} />
       <div className={cls.wrapper}>
         <div className={cls.container}>
           <h2 className={cls.title}>{data[`${type}`].title}</h2>
@@ -85,7 +85,7 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -14,9 +14,11 @@ import Icon from "../icons/icons";
 import cx from "classnames";
 import cls from "./navbar.module.scss";
 
-interface NavbarProps {}
+interface NavbarProps {
+  blackBg?: boolean;
+}
 
-const Navbar: React.FC<NavbarProps> = () => {
+const Navbar: React.FC<NavbarProps> = ({ blackBg }) => {
   const navigate = useNavigate();
   const [navbar, setNavbar] = useState(false);
   const [active, setActive] = useState(false);
@@ -65,7 +67,10 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <div className={cls.container}>
-      <section className={cx(cls.wrapper, navbar === true && cls.active)}>
+      <section
+        style={blackBg === true ? { backgroundColor: "rgb(18, 18, 18)" } : {}}
+        className={cx(cls.wrapper, navbar === true && cls.active)}
+      >
         <div className={cls.links}>
           {links.map(({ address, content }) => (
             <div key={content} onClick={() => handleNavigate(address)}>
