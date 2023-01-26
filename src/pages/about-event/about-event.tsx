@@ -1,31 +1,42 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "../../components/navbar";
 import { eventData } from "./inside";
-import cls from "./about-event.module.scss";
 import Button from "../../components/button/button";
 import Icons from "../../components/icons";
+import cls from "./about-event.module.scss";
+import axios from "axios";
 
 interface AboutEventProps {}
 
 const AboutEvent: React.FC<AboutEventProps> = () => {
   const [subscribe, setSubscribe] = useState(false);
   const { type } = useParams();
-  const data: any = eventData;
-
+  // const data: any = eventData;
+  const [data, setData] = useState(null);
   let today = new Date();
-
   let date =
     today.getFullYear() + "-" + (today.getMonth() + 1) + "-" + today.getDate();
-  return (
-    <>
-      <Navbar />
 
+  useEffect(() => {
+    axios
+      .get("https://185.185.80.245:7788/api/product")
+      .then((res) => {
+        setData(res.data.data.filter(({ id }: any) => `${id}` === type)[0]);
+      })
+      .catch((err) => {
+        console.log("vacancy error", err);
+      });
+  });
+
+  return (
+    <div className={cls.about}>
+      <Navbar blackBg={true} />
       <div className={cls.wrapper}>
-        <div className={cls.hiddenNavbar}>af</div>
+        {/* <div className={cls.hiddenNavbar}>af</div> */}
         <div className={cls.container}>
-          <h2 className={cls.title}>{data[`${type}`].title}</h2>
+          <h2 className={cls.title}>{data && data["nameUz"]}</h2>
           <h3 className={cls.subtitle}>Tashkilotchi</h3>
           <p className={cls.description}>
             Samarqand вилояти термиз шахар йошлар ишлар агентлиги маркази
@@ -33,13 +44,7 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
           <br />
           <br />
           <h3 className={cls.subtitle}>Tadbir haqida</h3>
-          <p className={cls.description}>
-            muddatli biznesni qo'llab-quvvatlaydi: IT-konsalting, brending
-            texnologiyalari, dizayn echimlari, Internet-loyihalarni ishlab
-            chiqish va ularga xizmat ko'rsatish, Internet-marketing,
-            veb-saytlarni loyihalash va ishlab chiqish, shuningdek ularni
-            qo'llab-quvvatlash va rivojlantirish.
-          </p>
+          <p className={cls.description}>{data && data["descriptionUz"]}</p>
           <br />
           <br />
           <h3 className={cls.subtitle}>Sana</h3>
@@ -79,7 +84,7 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

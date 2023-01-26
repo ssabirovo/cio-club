@@ -2,12 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 759px;
+  height: auto;
   padding-top: 100;
   position: relative;
   top: -30px;
   border-radius: 30px;
   background-color: var(--white);
+
   .title {
     font-family: "Okta Neue";
     font-style: normal;
@@ -78,4 +79,7 @@
     }
     margin-bottom: 60px;
   }
+}
+.heightShort {
+  min-height: 759px;
 }

@@ -1,8 +1,13 @@
+import partner1 from "../../../../assets/partners/image 10.svg";
+import partner2 from "../../../../assets/partners/IMAGE 2023-01-25 19:09:21.jpg";
+import partner3 from "../../../../assets/partners/surhandaryo.svg";
+import partner4 from "../../../../assets/partners/tiande.svg";
+import partner5 from "../../../../assets/partners/yoshlar.svg";
+
 export const Photos: string[] = [
-  "https://avantage.events/img/logo.e8a3ec13.png",
-  "https://advice.uz/uploads/%D1%82%D0%B0%D0%BC%D0%BE%D0%B6%D0%BD.png",
-  "https://it-park.uz/images/logo-park.png",
-  "https://water.gov.uz/uz/downloads?type=event&id=1667280930",
-  "https://www.uzexpocentre.uz/assets/public/images/logo.svg",
-  "https://mintrans.uz/logo/logooz.svg",
+  partner1,
+  partner2,
+  partner3,
+  partner4,
+  partner5,
 ];

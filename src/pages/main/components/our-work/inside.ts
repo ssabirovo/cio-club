@@ -1,12 +1,18 @@
 import photo1 from "../../../../assets/images/alisher isayev.png";
 import photo2 from "../../../../assets/images/Alisher avazov.png";
 import photo3 from "../../../../assets/images/Frame 1045.jpg";
+import video1 from "../../../../assets/videos/video1.mp4";
+import video2 from "../../../../assets/videos/video2.mp4";
 
 export const data = [
   {
     id: 1,
     imgSrc:
       "https://yt3.googleusercontent.com/J8p7qa4Ju_gs6Wf-TeR0ADBr9-gswxeCjPC1raVG5K0T7N_y5tRFYKMY9P8qwMxWFplqaN8OKA=s900-c-k-c0x00ffffff-no-rj",
+  },
+  {
+    id: 10,
+    videoScr: video2,
   },
   {
     id: 2,
@@ -28,6 +34,11 @@ export const data = [
     imgSrc:
       "https://www.gazeta.uz/media/img/2016/11/XJkDC114784978003118_l.jpg",
   },
+  {
+    id: 9,
+    videoScr: video1,
+  },
+
   {
     id: 6,
     imgSrc: photo1,

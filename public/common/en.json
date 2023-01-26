@@ -3,6 +3,9 @@
     "more": "More",
     "contact": "Contact"
   },
+  "header": {
+    "title": "Organization of business and psychological events"
+  },
   "events": {
     "title": "Events",
     "old": "Previous",
