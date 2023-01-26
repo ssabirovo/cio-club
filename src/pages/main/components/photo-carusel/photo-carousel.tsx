@@ -2,7 +2,7 @@ import { keyframes } from "@emotion/react";
 import React from "react";
 import Reveal from "react-awesome-reveal";
 import { useTranslation } from "react-i18next";
-import Slider from "react-slick";
+import Slider, { Settings } from "react-slick";
 import { Photos } from "./inside";
 import cls from "./photo-carousel.module.scss";
 
@@ -10,7 +10,7 @@ interface CarouselProps {}
 
 const PhotoCarousel: React.FC<CarouselProps> = () => {
   const { t } = useTranslation();
-  const settings = {
+  const settings: Settings = {
     dots: true,
     infinite: true,
     speed: 1000,

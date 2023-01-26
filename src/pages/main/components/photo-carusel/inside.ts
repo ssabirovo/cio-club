@@ -1,7 +1,5 @@
-import speaker1 from "../../../../assets/images/Frame 1045.jpg";
+import speaker1 from "../../../../assets/images/Frame1045.png";
+import speaker2 from "../../../../assets/images/image8.png";
+import speaker3 from "../../../../assets/images/image9.png";
 
-export const Photos: string[] = [
-  "https://tfi.uz/photos/14/AA%20news%20-%202022/AD%20AFKIR/7.jpg",
-  "https://tsuos.uz/wp-content/uploads/2022/04/IMG_3030-1024x683.jpg",
-  speaker1,
-];
+export const Photos: string[] = [speaker1, speaker2, speaker3];
