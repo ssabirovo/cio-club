@@ -3,6 +3,10 @@
     "more": "More",
     "contact": "Contact"
   },
+  "header": {
+    "title": "Organization of business and psychological events",
+    "subtitle": "Ibrat Club is a club that organizes business events with entrepreneurs in Surkhandarya region and Termiz city and provides solutions to problems arising in business activities."
+  },
   "events": {
     "title": "Events",
     "old": "Previous",

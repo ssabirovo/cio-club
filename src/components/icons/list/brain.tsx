@@ -2,8 +2,8 @@ import React from "react";
 
 const Brain: React.FC = () => (
   <svg
-  width="40"
-  height="44"
+    width="40"
+    height="44"
     viewBox="0 0 45 45"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
