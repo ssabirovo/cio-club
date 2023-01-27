@@ -87,7 +87,9 @@
       width: 100%;
     }
   }
-
+  .qrCode {
+    width: 50%;
+  }
   .success {
     background: #4fb91d;
     border-radius: 4px;
@@ -101,7 +103,10 @@
     justify-content: space-between;
     padding: 12px 23px;
     margin-bottom: 26px;
-
     color: #ffffff;
+    @media (max-width: 480px) {
+      font-size: 14px;
+      padding: 10px 10px;
+    }
   }
 }

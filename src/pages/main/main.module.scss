@@ -1,6 +1,6 @@
 .hero {
   height: 100vh;
-  background: url("../../assets/images/main-bg-60.png");
+  background: url("https://ibrat.teda.uz/main-bg-60.png");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -44,9 +44,11 @@
       line-height: 31px;
       display: flex;
       align-items: center;
-
       color: var(--white);
       margin: 24px 0 40px;
+      @media (max-width: 460px) {
+        font-size: 16px;
+      }
     }
 
     .btn {

@@ -18,6 +18,7 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
   const navigate = useNavigate();
   const [subscribe, setSubscribe] = useState(false);
   const [active, setActive] = useState(false);
+  const [qrId, setQrId] = useState(0);
   const { type } = useParams();
   // const data: any = eventData;
   const [data, setData] = useState(null);
@@ -42,7 +43,11 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
       <Modal
         active={active}
         element={
-          <Order setSubscribe={setSubscribe} setModalActive={setActive} />
+          <Order
+            type={type}
+            setSubscribe={setSubscribe}
+            setModalActive={setActive}
+          />
         }
         setActive={setActive}
       />
@@ -69,6 +74,7 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
           <h3 className={cls.subtitle}>Tadbir haqida</h3>
           <p className={cls.description}>{data && data["descriptionUz"]}</p>
           <br />
+
           <br />
           {/* <h3 className={cls.subtitle}>Sana</h3>
           <p className={cls.description}>11.02.2022 - 17.02.2022</p>
@@ -87,24 +93,30 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
             ></iframe>
           </div> */}
           {!subscribe ? (
-            <Button
-              onClick={() => {
-                setActive(true);
-              }}
-              className={cls.butt}
-              title="Murojat qilish !"
-            />
+            <>
+              <Button
+                onClick={() => {
+                  setActive(true);
+                }}
+                className={cls.butt}
+                title="Murojat qilish !"
+              />
+            </>
           ) : (
             <>
               <div className={cls.success}>
                 Siz bu tadbirga yozilgansiz <Icons size={22} name="Ticked" />
               </div>
-              <h3 className={cls.subtitle}>Murojaat vaqti</h3>
-              <p className={cls.description}>{date}</p>
+              {/* <h3 className={cls.subtitle}>Murojaat vaqti</h3>
+              <p className={cls.description}>{date}</p> */}
+              <h3 className={cls.subtitle}>Sizning QR-kodingiz</h3>
+              <img
+                className={cls.qrCode}
+                src="https://api.teda.uz:7788/api/site/getQrCode?requestId=58"
+                alt=""
+              />
               <br />
               <br />
-              <h3 className={cls.subtitle}>Qatnashilgan sana</h3>
-              <p className={cls.description}>23.02.2022</p>
             </>
           )}
         </div>

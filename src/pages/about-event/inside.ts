@@ -12,6 +12,13 @@ export interface eventDataType {
 export const eventData = {
   ictWeek: {
     title: "ictWeek",
+    organization: "",
+    adress: "",
+    adressMap: "",
+    description: "",
+    phone: "",
+    startDate: "",
+    endDate: "",
   },
   ibrat: {
     title: "ibrat",

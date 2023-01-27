@@ -29,9 +29,15 @@ type FormValues = {
   phone: string;
 };
 
-const Order: React.FC<OrderProps> = ({ setModalActive, type, forceRender }) => {
+const Order: React.FC<OrderProps> = ({
+  setModalActive,
+  type,
+  forceRender,
+  setSubscribe,
+}) => {
   const defaultEmail = localStorage.getItem("email");
   const defaultPhone = localStorage.getItem("phoneNumber");
+
   const {
     formState: { errors },
     handleSubmit,
@@ -45,25 +51,35 @@ const Order: React.FC<OrderProps> = ({ setModalActive, type, forceRender }) => {
     },
   });
 
-  const onSubmit = (data: any) => {
+  const getQr = (id: string) => {
     axios
-      .post("https://api.teda.uz:70/api/site", {
-        email: data.email,
-        phone: "+998".concat(data.phone),
-        aboutProduct: type,
-        category: type,
-      })
+      .get(`https://185.185.80.245:7788/api/site/getQrCode?requestId=${id}`)
       .then((res) => {
-        console.log(res);
-        //@ts-ignore
-        let lastOrders = JSON.parse(localStorage.getItem("lastOrders"));
-        lastOrders[`${type}`].id = res.data.data.id;
-        lastOrders[`${type}`].date = res.data.data.dateTime;
-        localStorage.setItem("lastOrders", JSON.stringify(lastOrders));
-
+        setSubscribe(true);
+        console.log("lata", res);
         toast.success("Bog'langaniz uchun rahmat !", {
           position: toast.POSITION.TOP_RIGHT,
         });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  const onSubmit = (data: any) => {
+    axios
+      .post(
+        `https://api.teda.uz:7788/api/site?phone=${data.phone}&email=${data.email}`,
+        {
+          email: data.email,
+          phone: "+998".concat(data.phone),
+          aboutProduct: "",
+          category: "",
+          productId: type,
+        }
+      )
+      .then((res) => {
+        console.log("lata", res.data.data);
+        getQr(res.data.data["id"]);
         setSubscribe(true);
         forceRender(1);
       })
@@ -149,6 +165,6 @@ const Order: React.FC<OrderProps> = ({ setModalActive, type, forceRender }) => {
 };
 
 export default Order;
-function setSubscribe(arg0: boolean) {
-  throw new Error("Function not implemented.");
-}
+// function setSubscribe(arg0: boolean) {
+//   throw new Error("Function not implemented.");
+// }
