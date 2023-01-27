@@ -11,8 +11,8 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
 interface RegisterProps {
-  setActive: any;
-  setUser: any;
+  setActive?: any;
+  setUser?: any;
 }
 
 interface IFormInputs {

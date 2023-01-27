@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navbar from "../../components/navbar";
 import ContactUs from "./components/contact-us";
 import Partners from "./components/partners";
@@ -15,6 +15,8 @@ interface MainProps {}
 const Main: React.FC<MainProps> = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const ref = useRef<HTMLDivElement>(null);
+  const [height, setHeight] = useState(0);
 
   const handleNavigate = (hash: string) => {
     let navig = new Promise((res, rej) => {
@@ -25,11 +27,18 @@ const Main: React.FC<MainProps> = () => {
       document.location.hash = hash;
     });
   };
+  useEffect(() => {
+    if (ref && ref.current && ref.current.clientHeight) {
+      //                              ^ error: Object is possibly 'null'
+      const height = ref.current.clientHeight;
+      setHeight(height);
+    }
+  }, []);
   return (
     <div id="home">
-      <Navbar />
+      <Navbar fatherHeight={height} />
 
-      <section className={cls.hero}>
+      <section className={cls.hero} ref={ref}>
         <div className={cls.info}>
           <h1 className={cls.title}>Istalgan tadbirni tashkil qilish</h1>
 

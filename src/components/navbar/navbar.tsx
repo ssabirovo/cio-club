@@ -16,14 +16,16 @@ import cls from "./navbar.module.scss";
 
 interface NavbarProps {
   blackBg?: boolean;
+  fatherHeight?: number;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ blackBg }) => {
+const Navbar: React.FC<NavbarProps> = ({ blackBg, fatherHeight }) => {
   const navigate = useNavigate();
   const [navbar, setNavbar] = useState(false);
   const [active, setActive] = useState(false);
   const [isActive, setIsActive] = useState(false);
   const [isUser, setUser] = useState(false);
+
   const hamRef = useRef<HTMLDivElement>(null);
   const { t } = useTranslation();
 
@@ -35,17 +37,16 @@ const Navbar: React.FC<NavbarProps> = ({ blackBg }) => {
     if (localStorage.getItem("user") || localStorage.getItem("email")) {
       setUser(true);
     }
-  }, []);
-
-  const changeBackground = () => {
-    if (window.scrollY >= 780) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
-
-  window.addEventListener("scroll", changeBackground);
+    console.log(fatherHeight);
+    const changeBackground = () => {
+      if (window.scrollY >= fatherHeight! - 105) {
+        setNavbar(true);
+      } else {
+        setNavbar(false);
+      }
+    };
+    window.addEventListener("scroll", changeBackground);
+  }, [fatherHeight]);
 
   const toggleHam = (hash?: string): void => {
     document.body.style.overflow = `${!isActive ? "hidden" : "auto"}`;

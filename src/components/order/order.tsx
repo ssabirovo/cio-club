@@ -9,10 +9,11 @@ import * as yup from "yup";
 import { object } from "prop-types";
 
 interface OrderProps {
-  setModalActive: any;
-  type: any;
-  title: string;
-  forceRender: any;
+  setModalActive?: any;
+  setSubscribe?: any;
+  type?: any;
+  title?: string;
+  forceRender?: any;
 }
 
 const scheme = yup.object().shape({
@@ -63,6 +64,7 @@ const Order: React.FC<OrderProps> = ({ setModalActive, type, forceRender }) => {
         toast.success("Bog'langaniz uchun rahmat !", {
           position: toast.POSITION.TOP_RIGHT,
         });
+        setSubscribe(true);
         forceRender(1);
       })
       .catch((err) => {
@@ -71,12 +73,13 @@ const Order: React.FC<OrderProps> = ({ setModalActive, type, forceRender }) => {
     localStorage.setItem("email", data.email);
     localStorage.setItem("phoneNumber", data.phone);
     setModalActive(false);
+
     reset();
   };
 
   return (
     <form id="form" className={cls.form} onSubmit={handleSubmit(onSubmit)}>
-      <p>"{t(type)}"ga buyurtma berish uchun toldring: </p>
+      <p>Tadbirga yozilish uchun to'ldiring !</p>
       <Controller
         name="email"
         control={control}
@@ -146,3 +149,6 @@ const Order: React.FC<OrderProps> = ({ setModalActive, type, forceRender }) => {
 };
 
 export default Order;
+function setSubscribe(arg0: boolean) {
+  throw new Error("Function not implemented.");
+}

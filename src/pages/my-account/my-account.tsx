@@ -6,6 +6,7 @@ import { Controller, useForm } from "react-hook-form";
 import SideBar from "../../components/side-bar/side-bar";
 import Navbar from "../../components/navbar/navbar";
 import SecondBar from "../../components/second-bar/second-bar";
+import { useNavigate } from "react-router-dom";
 
 interface MyAccountProps {}
 
@@ -20,6 +21,7 @@ const MyAccount: React.FC<MyAccountProps> = () => {
   const [disabled, setDisabled] = useState(true);
   const defaultPhone = localStorage.getItem("phoneNumber");
   const user = JSON.parse(localStorage.getItem("user") || "{}");
+  const navigate = useNavigate();
 
   const { handleSubmit, control } = useForm<FormValues>({
     defaultValues: {
@@ -37,6 +39,12 @@ const MyAccount: React.FC<MyAccountProps> = () => {
     setDisabled(true);
     console.log(data);
   };
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      navigate("/");
+    }
+  });
 
   return (
     <>

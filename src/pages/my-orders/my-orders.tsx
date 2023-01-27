@@ -4,11 +4,13 @@ import SideBar from "../../components/side-bar/side-bar";
 import axios from "axios";
 import SecondBar from "../../components/second-bar/second-bar";
 import Card from "../main/components/event/components/card/card";
+import { useNavigate } from "react-router-dom";
 
 interface MyAccountProps {}
 
 const MyAccount: React.FC<MyAccountProps> = () => {
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
 
   const id = localStorage.getItem("userId");
   useEffect(() => {
@@ -21,7 +23,12 @@ const MyAccount: React.FC<MyAccountProps> = () => {
         console.log(err);
       });
   }, []);
-  console.log("data order", data);
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      navigate("/");
+    }
+  });
   return (
     <>
       <SecondBar />

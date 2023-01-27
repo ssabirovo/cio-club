@@ -6,11 +6,15 @@ import { eventData } from "./inside";
 import Button from "../../components/button/button";
 import Icons from "../../components/icons";
 import cls from "./about-event.module.scss";
+import Modal from "../../components/modal/modal";
+import Register from "../../components/register/register";
+import Order from "../../components/order/order";
 
 interface AboutEventProps {}
 
 const AboutEvent: React.FC<AboutEventProps> = () => {
   const [subscribe, setSubscribe] = useState(false);
+  const [active, setActive] = useState(false);
   const { type } = useParams();
   const data: any = eventData;
 
@@ -21,6 +25,13 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
   return (
     <div className={cls.about}>
       <Navbar blackBg={true} />
+      <Modal
+        active={active}
+        element={
+          <Order setSubscribe={setSubscribe} setModalActive={setActive} />
+        }
+        setActive={setActive}
+      />
       <div className={cls.wrapper}>
         <div className={cls.hiddenNavbar}>af</div>
         <div className={cls.container}>
@@ -59,7 +70,9 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
           </div>
           {!subscribe ? (
             <Button
-              onClick={() => setSubscribe(true)}
+              onClick={() => {
+                setActive(true);
+              }}
               className={cls.butt}
               title="Murojat qilish !"
             />
