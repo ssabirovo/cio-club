@@ -6,6 +6,7 @@ import Event from "./components/event";
 import Directions from "./components/directions";
 import OurWork from "./components/our-work";
 import cls from "./main.module.scss";
+import mainBg from "../../assets/images/main-bg-60.png";
 import PhotoCarusel from "./components/photo-carusel";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -34,11 +35,16 @@ const Main: React.FC<MainProps> = () => {
       setHeight(height);
     }
   }, []);
+
   return (
     <div id="home">
       <Navbar fatherHeight={height} />
 
-      <section className={cls.hero} ref={ref}>
+      <section
+        className={cls.hero}
+        style={{ background: `url(${mainBg})` }}
+        ref={ref}
+      >
         <div className={cls.info}>
           <h1 className={cls.title}>{t("header.title")}</h1>
           <p className={cls.paragraph}>{t("header.subtitle")}</p>
