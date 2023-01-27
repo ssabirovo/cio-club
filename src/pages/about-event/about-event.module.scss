@@ -34,7 +34,14 @@
       width: auto;
       margin: 20px;
     }
-
+    .titleContainer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      svg {
+        cursor: pointer;
+      }
+    }
     .title {
       text-transform: capitalize;
       font-style: normal;

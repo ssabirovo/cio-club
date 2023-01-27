@@ -1,16 +1,18 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Navbar from "../../components/navbar";
 import { eventData } from "./inside";
 import Button from "../../components/button/button";
 import Icons from "../../components/icons";
 import cls from "./about-event.module.scss";
 import axios from "axios";
+import Icon from "../../components/icons/icons";
 
 interface AboutEventProps {}
 
 const AboutEvent: React.FC<AboutEventProps> = () => {
+  const navigate = useNavigate();
   const [subscribe, setSubscribe] = useState(false);
   const { type } = useParams();
   // const data: any = eventData;
@@ -36,11 +38,21 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
       <div className={cls.wrapper}>
         {/* <div className={cls.hiddenNavbar}>af</div> */}
         <div className={cls.container}>
-          <h2 className={cls.title}>{data && data["nameUz"]}</h2>
-          <h3 className={cls.subtitle}>Tashkilotchi</h3>
-          <p className={cls.description}>
+          <div className={cls.titleContainer}>
+            <h2 className={cls.title}>{data && data["nameUz"]}</h2>
+            <Icon
+              color="var(--primary)"
+              size={30}
+              onClick={() => navigate(`/`)}
+              name="Xmark"
+            />
+          </div>
+
+          {/* tashkilotchilar bo'ladi */}
+          {/* <h3 className={cls.subtitle}>Tashkilotchi</h3> */}
+          {/* <p className={cls.description}>
             Samarqand вилояти термиз шахар йошлар ишлар агентлиги маркази
-          </p>
+          </p> */}
           <br />
           <br />
           <h3 className={cls.subtitle}>Tadbir haqida</h3>
