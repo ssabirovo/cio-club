@@ -21,7 +21,7 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
 
   useEffect(() => {
     axios
-      .get("https://185.185.80.245:7788/api/product")
+      .get("https://api.teda.uz:7788/api/product")
       .then((res) => {
         setData(res.data.data.filter(({ id }: any) => `${id}` === type)[0]);
       })
