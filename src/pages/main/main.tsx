@@ -32,12 +32,7 @@ const Main: React.FC<MainProps> = () => {
       <section className={cls.hero}>
         <div className={cls.info}>
           <h1 className={cls.title}>{t("header.title")}</h1>
-          <p className={cls.paragraph}>
-            Ibrat Club - Surxondaryo va Termiz shahridagi tadbirkorlar bilan
-            biznes tadbirlar tashkillashtiruvchi club va tadbirkorlik
-            faoliyatidagi yuzaga kelayotgan muammolariga yechimlar bilan
-            shug'ullanuvchi club.
-          </p>
+          <p className={cls.paragraph}>{t("header.subtitle")}</p>
           <button
             className={cls.btn}
             onClick={() => handleNavigate("#contact")}
