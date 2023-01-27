@@ -69,7 +69,7 @@ const Navbar: React.FC<NavbarProps> = ({ blackBg, fatherHeight }) => {
   return (
     <div className={cls.container}>
       <section
-        style={blackBg === true ? { backgroundColor: "rgb(18, 18, 18)" } : {}}
+        style={blackBg === true ? { backgroundColor: "rgb(18, 18, 18) " } : {}}
         className={cx(cls.wrapper, navbar === true && cls.active)}
       >
         <div className={cls.links}>

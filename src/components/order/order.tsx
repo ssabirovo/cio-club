@@ -26,7 +26,7 @@ const scheme = yup.object().shape({
 
 type FormValues = {
   email: string;
-//32q
+  //32q
   phone: string;
 };
 
@@ -166,6 +166,3 @@ const Order: React.FC<OrderProps> = ({
 };
 
 export default Order;
-// function setSubscribe(arg0: boolean) {
-//   throw new Error("Function not implemented.");
-// }
