@@ -26,6 +26,7 @@ const scheme = yup.object().shape({
 
 type FormValues = {
   email: string;
+//32q
   phone: string;
 };
 

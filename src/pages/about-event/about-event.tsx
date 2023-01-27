@@ -7,7 +7,6 @@ import Button from "../../components/button/button";
 import Icons from "../../components/icons";
 import cls from "./about-event.module.scss";
 import Modal from "../../components/modal/modal";
-import Register from "../../components/register/register";
 import Order from "../../components/order/order";
 import Icon from "../../components/icons/icons";
 import axios from "axios";

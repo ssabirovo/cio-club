@@ -103,11 +103,11 @@ const Navbar: React.FC<NavbarProps> = ({ blackBg, fatherHeight }) => {
 
           <BasicSelect color="white" />
 
-          {/* {isUser ? (
+          {isUser ? (
             <ImgCircle close={setUser} mobile={false} />
           ) : (
             <Button onClick={() => setActive(true)} title={"Login"} />
-          )} */}
+          )}
         </div>
 
         {!defaultEmail && (
