@@ -24,7 +24,7 @@ const Event: React.FC<EventProps> = () => {
 
   useEffect(() => {
     axios
-      .get("https://185.185.80.245:7788/api/product")
+      .get("https://api.teda.uz:7788/api/product")
       .then((res) => {
         setData(res.data.data);
       })

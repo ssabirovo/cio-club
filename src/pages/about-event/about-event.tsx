@@ -47,7 +47,7 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
           <p className={cls.description}>{data && data["descriptionUz"]}</p>
           <br />
           <br />
-          <h3 className={cls.subtitle}>Sana</h3>
+          {/* <h3 className={cls.subtitle}>Sana</h3>
           <p className={cls.description}>11.02.2022 - 17.02.2022</p>
           <br />
           <br />
@@ -62,7 +62,7 @@ const AboutEvent: React.FC<AboutEventProps> = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
+          </div> */}
           {!subscribe ? (
             <Button
               onClick={() => setSubscribe(true)}
